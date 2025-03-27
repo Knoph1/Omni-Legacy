@@ -1,0 +1,25 @@
+{
+    "name": "knoph's-portfolio",
+    "version": "1.0.0",
+    "description": "A personal portfolio site for Knoph O.L A.",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server", 
+      "build": "echo 'No build process defined'",
+      "test": "echo 'No tests defined'"
+    },
+    "author": "Knoph O.L A.",
+    "license": "MIT",
+    "devDependencies": {
+      "live-server": "^1.2.0"
+    },
+    "dependencies": {
+      "core-js": "^3.6.5"
+    },
+    "keywords": [
+      "portfolio",
+      "web developer",
+      "personal website"
+    ]
+  }
+  

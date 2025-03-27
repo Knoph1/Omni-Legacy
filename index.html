@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Knoph O.L Ayieko's Portfolio – Web Developer, IT Consultant and Certified Virtual Assistant.">
+    <meta name="keywords" content="Knoph, Knoph O.L A., Portfolio, Web Developer, IT Consultant, Virtual Assistant">
+    <meta name="author" content="Knoph O.L A.">
+    <title>Knoph's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="light-mode">
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/profile/knoph-o.l-a.jpg" alt="Knoph's Logo" class="profile-pic" loading="lazy">
+                <h1>Knoph's Portfolio</h1>
+            </div>            
+            <nav class="navbar">
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Mobile Menu Button -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+                <button class="toggle-btn" id="mode-toggle">Light Mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-container">
+                <h2>Welcome to My World</h2>
+                <p><strong>Knoph O.L A.</strong> <br> Web Developer | IT Consultant | Certified Virtual Assistant</p>
+                <p>Passionate about technology, research and innovation. Explore my journey, projects and ambitions.</p> <br>
+                <a href="pages/projects.html" class="btn">View My Projects</a>
+            </div>
+        </section>
+
+        <!-- About Section (Optional) -->
+        <section id="introductory">
+            <h2><strong>About Me</strong></h2>
+            <p>Get to know more about my background, skills and journey in IT.</p> <br>
+            <a href="pages/about.html" class="btn">Learn More</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> | Knoph O.L A. | All Rights Reserved.</p>
+        <p>Powered by <a href="https://github.com/Knoph1" target="_blank">GitHub Pages</a></p>
+        <div class="social-links">
+            <a href="https://github.com/Knoph1" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://ke.linkedin.com/in/knoph-ayieko-83464918a" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="mailto:knophayieko@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
