@@ -13,7 +13,7 @@ Check out the live site here: [knoph's portfolio](https://knoph1.github.io/Knoph
 
 ## 📚 About Me
 
-I'm **Knoph O.L A.** — a passionate **Web Developer** with a **BSc. in IT** from the University of Kabianga and certifications in **Back-End Development** and **Front-End Development** from ALX Africa. 
+I'm **Knoph O.L A.** — a passionate **Web Developer** with a **BSc. in IT** from the University of Kabianga and certifications in **Back-End Development** and **Front-End Development** courtesy of YouTube, freeCodeCamp and Self-Taught *(plus now ALX Africa)*. 
 
 I am on a continuous journey of growth in **Full-Stack Web Development** and have a keen interest in **research, teaching** and **mentorship**.
 
