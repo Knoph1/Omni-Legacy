@@ -1,4 +1,6 @@
-# 🚀 Knoph O.L A. | Personal Portfolio
+# Personal Portfolio
+
+## 🚀 Knoph O.L A.
 
 Welcome to my personal web portfolio!
 
@@ -72,13 +74,13 @@ You can reach me via:
 
 - 📧 Email: [knophayieko@gmail.com](mailto:knophayieko@gmail.com)  
 - 🐦 GitHub: [github.com/knoph1](https://github.com/knoph1)  
-- 💼 LinkedIn: [linkedin.com/in/knophayieko](https://ke.linkedin.com/in/knoph-ayieko-83464918a)
+- 💼 LinkedIn: [linkedin.com/in/knophayieko](https://ke.linkedin.com/in/knoph-ayieko)
 
 ---
 
 ## 🌟 How to Contribute
 
-Contributions are welcome! If you'd like to improve the design, suggest new features, or optimize the site:
+Contributions are welcome! If you'd like to improve the design, suggest new features or optimize the site:
 
 1. Fork this repository.
 2. Create a new branch (`feature-idea`).
@@ -90,8 +92,6 @@ Contributions are welcome! If you'd like to improve the design, suggest new feat
 ## 🔐 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-© 2025 Knoph O.L A. | All Rights Reserved.
 
 ---
 
@@ -158,3 +158,5 @@ This project is licensed under the [MIT License](LICENSE).
  ├── README.md
 
 ---
+
+© 2023 Knoph O.L A. | All Rights Reserved.
