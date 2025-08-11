@@ -72,9 +72,9 @@ git clone https://github.com/Knoph1/Knoph-Portfolio.git
 
 You can reach me via:
 
-- 📧 Email: [knophayieko@gmail.com](mailto:knophayieko@gmail.com)  
-- 🐦 GitHub: [github.com/knoph1](https://github.com/knoph1)  
-- 💼 LinkedIn: [linkedin.com/in/knophayieko](https://ke.linkedin.com/in/knoph-ayieko)
+- 📧 Email: [Knoph Ayieko](mailto:knophayieko@gmail.com)  
+- 🐦 GitHub: [Knoph1](https://github.com/knoph1)  
+- 💼 LinkedIn: [Knoph Ayieko](https://ke.linkedin.com/in/knoph-ayieko)
 
 ---
 
