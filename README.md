@@ -1,162 +1,144 @@
-# Personal Portfolio
+# Omni-Legacy Ltd. (O.L Ltd.) – Company Website
 
-## 🚀 Knoph O.L A.
+![O.L Ltd. Logo](assets/logo.png)
 
-Welcome to my personal web portfolio!
-
-This project showcases my journey as a **Web Developer** and **IT Specialist** — highlighting my skills, projects and ambitions.
-
-## 🌐 Live Demo
-Check out the live site here: [knoph's portfolio](https://knoph1.github.io/Knoph-s-Portfolio/)
-
----
-
-## 📚 About Me
-
-I'm **Knoph O.L A.** — a passionate **Web Developer** with a **BSc. in IT** from the University of Kabianga and certifications in **Back-End Development** and **Front-End Development** courtesy of YouTube, freeCodeCamp and Self-Taught *(plus now ALX Africa)*. 
-
-I am on a continuous journey of growth in **Full-Stack Web Development** and have a keen interest in **research, teaching** and **mentorship**.
+## Table of Contents
+1. [Overview](#overview)
+2. [About the Company](#about-the-company)
+3. [Website Features](#website-features)
+4. [Technologies Used](#technologies-used)
+5. [Project Structure](#project-structure)
+6. [Installation & Setup](#installation--setup)
+7. [Deployment](#deployment)
+8. [Contributing](#contributing)
+9. [Contact](#contact)
+10. [License](#license)
 
 ---
 
-## 🏗️ Features
+## Overview
+**Omni-Legacy Ltd. (O.L Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation, and project delivery services**.  
+This repository contains the **official website** for O.L Ltd., showcasing our **portfolio, services, projects, and contact information** for clients, partners, and tenders.
 
-- **Responsive Design** — optimized for all screen sizes.
-- **Dark/Light Mode Toggle** — for accessibility and user preference.
-- **Smooth Animations & Transitions** — enhancing user experience.
-- Pre-loader & page transitions
-- **Interactive Contact Form** — powered by Formspree.
-- Contact form integration
-- **SEO Optimized** — schema markup for better search visibility.
-
-✅ Mobile Responsiveness (Tailwind/Grid/Flexbox)
-
-✅ Smooth Scroll & Page Transitions
-
-✅ SEO Optimization (Meta tags, structured data)
+**Website:** [www.omni-legacy.tech](http://www.omni-legacy.tech)  
+**Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
+**Phone:** +254 790 558 956  
 
 ---
 
-## 📁 Pages
-
-- **Home** — Introduction, ambitions and hobbies.
-- **About Me** — Background, work experience and qualifications.
-- **Projects** — Showcase of life’s work — from complex to simple projects.
-- **Contact Me** — Socials, email form and professional links.
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML5, CSS3, JavaScript (Basic front-end stack)**  
-- **React.js (For dynamic and reusable components)**  
-- **Tailwind CSS (For fast styling)**  
-- **Next.js (Optional, for better SEO and performance)** for contact form handling
-- **GitHub Pages** — for hosting
+## About the Company
+- **Headquarters:** Nairobi, Kenya  
+- **Branches:** Mombasa & Eldoret  
+- **Founders:**  
+  - Mary Muthoni Muraguri – CEO / Founder / Director (75% Ownership)  
+  - Knoph Oluoch Ayieko – CTO / Co-founder / Co-Director (20% Ownership)  
+- **Mission:** Deliver robust, scalable, and compliant IT solutions for businesses, government, and NGOs.  
+- **Vision:** Become the leading IT solutions provider in Kenya and East Africa.  
+- **Core Values:** Innovation, Integrity, Client Success, Excellence, Scalability  
 
 ---
 
-## 📦 Installation
-
-```bash
-# Clone this repository
-git clone https://github.com/Knoph1/Knoph-Portfolio.git
-
-# Open the index.html file in your browser
-
-```
-
-<!-- content continuation -->
-
-## 📬 Contact
-
-You can reach me via:
-
-- 📧 Email: [Knoph Ayieko](mailto:knophayieko@gmail.com)  
-- 🐦 GitHub: [Knoph1](https://github.com/knoph1)  
-- 💼 LinkedIn: [Knoph Ayieko](https://ke.linkedin.com/in/knoph-ayieko)
+## Website Features
+- **Home / Landing Page:** Company introduction, vision, mission, core values, and CTA.  
+- **About Page:** Company profile, leadership, history, certifications, credibility.  
+- **Services Page:** Detailed IT & software development services, scope, and “Why Choose O.L Ltd.” section.  
+- **Projects / Portfolio Page:** Detailed showcase of IT projects, case studies, and outcomes.  
+- **Contact Page:** Interactive contact form, maps to HQ & branches, email & phone integration.  
+- **Dark / Light Mode:** Accessibility-friendly UI toggle.  
+- **Responsive Design:** Works seamlessly on mobile, tablet, and desktop devices.  
 
 ---
 
-## 🌟 How to Contribute
-
-Contributions are welcome! If you'd like to improve the design, suggest new features or optimize the site:
-
-1. Fork this repository.
-2. Create a new branch (`feature-idea`).
-3. Commit your changes.
-4. Submit a pull request.
-
----
-
-## 🔐 License
-
-This project is licensed under the [MIT License](LICENSE).
+## Technologies Used
+- **Frontend:** HTML5, CSS3, JavaScript, React.js  
+- **Styling / UI:** Tailwind CSS, Framer Motion animations  
+- **Backend (if applicable):** Node.js / PHP / Flask  
+- **Database:** MySQL / PostgreSQL / MongoDB  
+- **Tools:** Git, GitHub, VS Code, Figma, Postman  
+- **Deployment:** Vercel / Netlify / AWS (as per project deployment)  
 
 ---
 
 ## Project Structure
-
-/Knoph_Portfolio
-
- ├── /.dist (it's a hidden folder for builds and for other hidden files)
-
- ├── /assets
-
- │   ├── /css
-
- │   │   ├── animation.css
-
- │   │   ├── contact.css
-
- │   │   ├── styles.css
-
- │   ├── /images
-
- │   │   ├── /others
-
- │   │   ├── /profile
-
- │   │   │   ├── knoph-ol-a.jpg
-
- │   │   ├── /projects
-
- │   ├── /js
-
- │   │   ├── forms.js
-
- │   │   ├── script.js
-
- ├── /pages
-
- │   ├── 404.html
-
- │   ├── about.html
-
- │   ├── contact.html
-
- │   ├── deployment.html
-
- │   ├── projects.html
-
- ├── /backend
-
- │   ├── contact-form.php
-
- │   ├── test_mail.php
-
- ├── /deployment-status.html
-
- ├── /.gitignore
-
- ├── /LICENSE
-
- ├── index.html
-
- ├── package.json
-
- ├── README.md
+```
+/omni-legacy-website
+├── public/                 # Static assets (images, logos, favicon)
+├── src/
+│   ├── components/         # Reusable React components
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── HeroSection.jsx
+│   │   └── ProjectCard.jsx
+│   ├── pages/              # Pages
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   └── App.jsx
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
 ---
 
-© 2023 Knoph O.L A. | All Rights Reserved.
+## Installation & Setup
+1. **Clone the repository**
+```bash
+git clone https://github.com/Knoph1/omni-legacy-website.git
+```
+2. **Navigate to the project folder**
+```bash
+cd omni-legacy-website
+```
+3. **Install dependencies**
+```bash
+npm install
+```
+4. **Start the development server**
+```bash
+npm start
+```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser  
+
+---
+
+## Deployment
+1. **Build for production**
+```bash
+npm run build
+```
+2. **Deploy** via Vercel, Netlify, or any preferred hosting service.  
+3. **Ensure environment variables** (if any) are set in the hosting platform.  
+
+---
+
+## Contributing
+We welcome contributions to enhance the website!  
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature/branch-name`)  
+3. Make your changes and commit (`git commit -m "Description of change"`)  
+4. Push to your branch (`git push origin feature/branch-name`)  
+5. Open a Pull Request for review  
+
+**Please ensure**:  
+- Code is well-documented  
+- UI changes maintain responsiveness  
+- Accessibility and SEO best practices are followed  
+
+---
+
+## Contact
+**Omni-Legacy Ltd. (O.L Ltd.)**  
+- **Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
+- **Phone:** +254 790 558 956  
+- **Website:** [www.omni-legacy.tech](http://www.omni-legacy.tech)  
+- **HQ:** Nairobi, Kenya  
+- **Branches:** Mombasa & Eldoret  
+
+---
+
+## License
+This project is **proprietary** and owned by Omni-Legacy Ltd.  
+© 2025 Omni-Legacy Ltd. All Rights Reserved.
