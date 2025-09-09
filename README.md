@@ -1,8 +1,9 @@
-# Omni-Legacy Ltd.
-
-## O.L Ltd. – Company Website
-
+# Omni-Legacy  
+## Omni-Legacy Ltd.  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
+
+# O.L Ltd.  
+## A Company Website
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -141,6 +142,8 @@ We welcome contributions to enhance the website!
 
 ---
 
-## License
-This project is **proprietary** and owned by Omni-Legacy Ltd.  
-© 2025 Omni-Legacy Ltd. All Rights Reserved.
+## License  
+*Developed with care by **Knoph O. Ayieko** – Official Web Developer of Omni-Legacy Ltd.*  
+> This project is **proprietary software** and is the exclusive property of **Omni-Legacy Ltd.**  
+Unauthorized use, distribution or modification of this code is strictly prohibited.  
+© 2025 Omni-Legacy Ltd. – All Rights Reserved.
