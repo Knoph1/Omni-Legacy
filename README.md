@@ -54,7 +54,7 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 ## Technologies Used
 - **Frontend:** HTML5, CSS3, JavaScript, React.js  
 - **Styling / UI:** Tailwind CSS, Framer Motion animations  
-- **Backend (if applicable):** Node.js / PHP / Flask  
+- **Backend:** Node.js / PHP / Flask  
 - **Database:** MySQL / PostgreSQL / MongoDB  
 - **Tools:** Git, GitHub, VS Code, Figma, Postman  
 - **Deployment:** Vercel / Netlify / AWS (as per project deployment)  
@@ -88,7 +88,7 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 ## Installation & Setup
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Knoph1/omni-legacy-website.git
+git clone https://github.com/Knoph1/omni-legacy.git
 ```
 2. **Navigate to the project folder**
 ```bash
