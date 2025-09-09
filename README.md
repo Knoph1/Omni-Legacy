@@ -142,7 +142,7 @@ We welcome contributions to enhance the website!
 ---
 
 ## License  
-*Developed with care by **Knoph O. Ayieko** – Official Web Developer of Omni-Legacy Ltd.*  
+*Developed with care by **Knoph O. Ayieko** – Official Web Developer of **Omni-Legacy Ltd.***  
 > This project is **proprietary software** and is the exclusive property of **Omni-Legacy Ltd.**  
 Unauthorized use, distribution or modification of this code is strictly prohibited.
 
