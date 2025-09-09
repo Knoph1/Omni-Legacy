@@ -1,4 +1,6 @@
-# Omni-Legacy Ltd. (O.L Ltd.) – Company Website
+# Omni-Legacy Ltd.
+
+## O.L Ltd. – Company Website
 
 ![O.L Ltd. Logo](assets/logo.png)
 
@@ -17,8 +19,8 @@
 ---
 
 ## Overview
-**Omni-Legacy Ltd. (O.L Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation, and project delivery services**.  
-This repository contains the **official website** for O.L Ltd., showcasing our **portfolio, services, projects, and contact information** for clients, partners, and tenders.
+**Omni-Legacy Ltd. (O.L Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation and project delivery services**.  
+This repository contains the **official website** for O.L Ltd., showcasing our **portfolio, services, projects and contact information** for clients, partners and tenders.
 
 **Website:** [www.omni-legacy.tech](http://www.omni-legacy.tech)  
 **Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
@@ -30,22 +32,22 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 - **Headquarters:** Nairobi, Kenya  
 - **Branches:** Mombasa & Eldoret  
 - **Founders:**  
-  - Mary Muthoni Muraguri – CEO / Founder / Director (75% Ownership)  
-  - Knoph Oluoch Ayieko – CTO / Co-founder / Co-Director (20% Ownership)  
-- **Mission:** Deliver robust, scalable, and compliant IT solutions for businesses, government, and NGOs.  
+  - Mary M. Muraguri – CEO / Founder / Director (75% Ownership)  
+  - Knoph O. Ayieko – CTO / Co-founder / Co-Director (20% Ownership)  
+- **Mission:** Deliver robust, scalable and compliant IT solutions for businesses, government and NGOs.  
 - **Vision:** Become the leading IT solutions provider in Kenya and East Africa.  
 - **Core Values:** Innovation, Integrity, Client Success, Excellence, Scalability  
 
 ---
 
 ## Website Features
-- **Home / Landing Page:** Company introduction, vision, mission, core values, and CTA.  
+- **Home / Landing Page:** Company introduction, vision, mission, core values and CTA.  
 - **About Page:** Company profile, leadership, history, certifications, credibility.  
-- **Services Page:** Detailed IT & software development services, scope, and “Why Choose O.L Ltd.” section.  
-- **Projects / Portfolio Page:** Detailed showcase of IT projects, case studies, and outcomes.  
+- **Services Page:** Detailed IT & software development services, scope and “Why Choose O.L Ltd.” section.  
+- **Projects / Portfolio Page:** Detailed showcase of IT projects, case studies and outcomes.  
 - **Contact Page:** Interactive contact form, maps to HQ & branches, email & phone integration.  
 - **Dark / Light Mode:** Accessibility-friendly UI toggle.  
-- **Responsive Design:** Works seamlessly on mobile, tablet, and desktop devices.  
+- **Responsive Design:** Works seamlessly on mobile, tablet and desktop devices.  
 
 ---
 
@@ -61,7 +63,7 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 
 ## Project Structure
 ```
-/omni-legacy-website
+/omni-legacy
 ├── public/                 # Static assets (images, logos, favicon)
 ├── src/
 │   ├── components/         # Reusable React components
@@ -109,7 +111,7 @@ npm start
 ```bash
 npm run build
 ```
-2. **Deploy** via Vercel, Netlify, or any preferred hosting service.  
+2. **Deploy** via Vercel, Netlify or any preferred hosting service.  
 3. **Ensure environment variables** (if any) are set in the hosting platform.  
 
 ---
