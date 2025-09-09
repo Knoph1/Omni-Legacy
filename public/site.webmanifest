@@ -1,0 +1,21 @@
+{
+  "name": "Omni-Legacy Ltd.",
+  "short_name": "O.L Ltd.",
+  "description": "Leading Kenyan IT company providing custom software development and IT consultancy services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
