@@ -1,9 +1,8 @@
 # Omni-Legacy  
-## Omni-Legacy Ltd.  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
-# O.L Ltd.  
-## A Company Website
+## Omni-Legacy Ltd.
+> O.L Ltd. - Company Website
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -33,8 +32,8 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 - **Headquarters:** Nairobi, Kenya  
 - **Branches:** Mombasa & Eldoret  
 - **Founders:**  
-  - Mary M. Muraguri – CEO / Founder / Director (75% Ownership)  
-  - Knoph O. Ayieko – CTO / Co-founder / Co-Director (20% Ownership)  
+  - Mary M. Muraguri – CEO, Founder & Director (75% Ownership)  
+  - Knoph O. Ayieko – CTO, Co-founder & Co-Director (20% Ownership)  
 - **Mission:** Deliver robust, scalable and compliant IT solutions for businesses, government and NGOs.  
 - **Vision:** Become the leading IT solutions provider in Kenya and East Africa.  
 - **Core Values:** Innovation, Integrity, Client Success, Excellence, Scalability  
@@ -145,5 +144,6 @@ We welcome contributions to enhance the website!
 ## License  
 *Developed with care by **Knoph O. Ayieko** – Official Web Developer of Omni-Legacy Ltd.*  
 > This project is **proprietary software** and is the exclusive property of **Omni-Legacy Ltd.**  
-Unauthorized use, distribution or modification of this code is strictly prohibited.  
+Unauthorized use, distribution or modification of this code is strictly prohibited.
+
 © 2025 Omni-Legacy Ltd. – All Rights Reserved.
