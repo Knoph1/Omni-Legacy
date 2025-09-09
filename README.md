@@ -2,7 +2,7 @@
 
 ## O.L Ltd. – Company Website
 
-![O.L Ltd. Logo](public/logo.png)
+<img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
 ## Table of Contents
 1. [Overview](#overview)
