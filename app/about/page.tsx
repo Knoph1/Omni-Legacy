@@ -8,13 +8,13 @@ import { TeamSection } from "@/components/team-section"
 import { CompanyStats } from "@/components/company-stats"
 
 export const metadata: Metadata = {
-  title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company | Mary Muthoni Muraguri CEO",
+  title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company | Mary M. Muraguri CEO",
   description:
-    "Learn about Omni-Legacy Limited (O.L Ltd.), a woman-led Kenyan IT company founded by CEO Mary Muthoni Muraguri and CTO Knoph Oluoch Ayieko. Discover our mission, values, and expertise in software development and IT consultancy across Kenya and East Africa.",
+    "Learn about Omni-Legacy Limited (O.L Ltd.), a woman-led Kenyan IT company founded by CEO Mary M. Muraguri and CTO Knoph O. Ayieko. Discover our mission, values and expertise in software development and IT consultancy across Kenya and East Africa.",
   keywords: [
     "Omni-Legacy Limited about",
-    "Mary Muthoni Muraguri CEO",
-    "Knoph Oluoch Ayieko CTO",
+    "Mary M. Muraguri CEO",
+    "Knoph O. Ayieko CTO",
     "woman-led IT company Kenya",
     "Kenyan IT company founders",
     "O.L Ltd team",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company",
     description:
-      "Woman-led Kenyan IT company founded by CEO Mary Muthoni Muraguri. Expert team delivering innovative software solutions across Kenya and East Africa.",
+      "Woman-led Kenyan IT company founded by CEO Mary M. Muraguri. Expert team delivering innovative software solutions across Kenya and East Africa.",
     url: "https://omni-legacy.tech/about",
     siteName: "Omni-Legacy Ltd.",
     images: [
