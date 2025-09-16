@@ -7,9 +7,9 @@ import { PortfolioHighlights } from "@/components/portfolio-highlights"
 import { CTASection } from "@/components/cta-section"
 
 export const metadata: Metadata = {
-  title: "IT Projects Portfolio Kenya | KDHE | NASCOP | Government Solutions - Omni-Legacy Ltd.",
+  title: "IT Projects Portfolio Kenya | KDHE | NASCOP | Government Solutions - Omni-Legacy Co. Ltd.",
   description:
-    "Explore our successful IT projects in Kenya: Kenya Digital Health Ecosystem (KDHE), NASCOP website, Ashker Credit Solution, AcePapers platform, and University of Kabianga Research Portal. Proven track record in government, healthcare, fintech, and education sectors.",
+    "Explore our successful IT projects in Kenya: Kenya Digital Health Ecosystem (KDHE), NASCOP website, Ashker Credit Solution, AcePapers platform and University of Kabianga Research Portal. Proven track record in government, healthcare, fintech and education sectors.",
   keywords: [
     "IT projects Kenya",
     "KDHE Kenya Digital Health Ecosystem",
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IT Projects Portfolio Kenya | KDHE | NASCOP | Government Solutions",
     description:
-      "Successful IT projects including Kenya Digital Health Ecosystem, NASCOP website, and various government, healthcare, and fintech solutions.",
+      "Successful IT projects including Kenya Digital Health Ecosystem, NASCOP website and various government, healthcare and fintech solutions.",
     url: "https://omni-legacy.tech/projects",
-    siteName: "Omni-Legacy Ltd.",
+    siteName: "Omni-Legacy Co. Ltd.",
     images: [
       {
         url: "/healthcare-system.png",
         width: 1200,
         height: 630,
-        alt: "Omni-Legacy Limited IT Projects Portfolio Kenya",
+        alt: "Omni-Legacy Company Limited IT Projects Portfolio Kenya",
       },
     ],
     locale: "en_KE",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "IT Projects Portfolio Kenya | KDHE | NASCOP - Omni-Legacy Ltd.",
-    description: "Successful IT projects in government, healthcare, fintech, and education sectors across Kenya.",
+    description: "Successful IT projects in government, healthcare, fintech and education sectors across Kenya.",
     images: ["/healthcare-system.png"],
   },
   alternates: {
