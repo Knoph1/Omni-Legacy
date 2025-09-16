@@ -4,9 +4,9 @@ import { Footer } from "@/components/footer"
 import { QuoteRequestForm } from "@/components/quote-request-form"
 
 export const metadata: Metadata = {
-  title: "Get IT Project Quote Kenya | Free Estimate | Custom Software Development - Omni-Legacy Ltd.",
+  title: "Get IT Project Quote Kenya | Free Estimate | Custom Software Development - Omni-Legacy Co. Ltd.",
   description:
-    "Get instant quote for your IT project in Kenya. Free consultation and detailed proposal within 24 hours. Custom software development, cybersecurity, cloud solutions, and IT consultancy services. AGPO certified company.",
+    "Get instant quote for your IT project in Kenya. Free consultation and detailed proposal within 24 hours. Custom software development, cybersecurity, cloud solutions and IT consultancy services. AGPO certified company.",
   keywords: [
     "IT project quote Kenya",
     "software development quote",
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     "IT project cost Kenya",
   ].join(", "),
   openGraph: {
-    title: "Get IT Project Quote Kenya | Free Estimate - Omni-Legacy Ltd.",
+    title: "Get IT Project Quote Kenya | Free Estimate - Omni-Legacy Co. Ltd.",
     description: "Get instant quote for your IT project with free consultation and detailed proposal within 24 hours.",
     url: "https://omni-legacy.tech/quote",
-    siteName: "Omni-Legacy Ltd.",
+    siteName: "Omni-Legacy Co. Ltd.",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Get IT Project Quote Kenya - Omni-Legacy Limited",
+        alt: "Get IT Project Quote Kenya - Omni-Legacy Company Limited",
       },
     ],
     locale: "en_KE",
