@@ -22,7 +22,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. Services Description</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Omni-Legacy Limited provides IT solutions including but not limited to:
+                Omni-Legacy Company Limited provides IT solutions including but not limited to:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Custom Software Development</li>
@@ -53,7 +53,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                O.L Ltd. shall not be liable for any indirect, incidental, special, consequential or punitive damages,
+                O.L Co. Ltd. shall not be liable for any indirect, incidental, special, consequential or punitive damages,
                 including without limitation, loss of profits, data, use, goodwill or other intangible losses,
                 resulting from your use of our services.
               </p>
