@@ -184,7 +184,7 @@ export function ProjectEstimator() {
                       <Badge variant="secondary">Rough Estimate</Badge>
                       <p className="text-sm text-muted-foreground">
                         This is a rough estimate based on typical project requirements. Final pricing may vary based on
-                        specific needs, complexity, and scope changes.
+                        specific needs, complexity and scope changes.
                       </p>
                     </div>
                     <Button asChild>
