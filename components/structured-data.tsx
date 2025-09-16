@@ -2,22 +2,22 @@ export function StructuredData() {
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Omni-Legacy Limited",
-    alternateName: "O.L Ltd.",
+    name: "Omni-Legacy Company Limited",
+    alternateName: "O.L Co. Ltd.",
     url: "https://omni-legacy.tech",
     logo: "https://omni-legacy.tech/logo.png",
     description:
-      "Leading Kenyan IT company specializing in custom software development, IT consultancy, digital transformation, cybersecurity, and cloud solutions across Kenya and East Africa.",
+      "Leading Kenyan IT company specializing in custom software development, IT consultancy, digital transformation, cybersecurity and cloud solutions across Kenya and East Africa.",
     foundingDate: "2020",
     founders: [
       {
         "@type": "Person",
-        name: "Mary Muthoni Muraguri",
+        name: "Mary M. Muraguri",
         jobTitle: "Chief Executive Officer",
       },
       {
         "@type": "Person",
-        name: "Knoph Oluoch Ayieko",
+        name: "Knoph O. Ayieko",
         jobTitle: "Chief Technology Officer",
       },
     ],
@@ -35,9 +35,9 @@ export function StructuredData() {
       availableLanguage: ["English", "Swahili"],
     },
     sameAs: [
-      "https://linkedin.com/company/omni-legacy",
+      "https://linkedin.com/omni-legacy",
       "https://twitter.com/omnilegacy",
-      "https://github.com/omni-legacy",
+      "https://github.com/Knoph1/Omni-Legacy",
     ],
     serviceArea: {
       "@type": "Country",
