@@ -13,7 +13,7 @@ const jobOpenings = [
     description:
       "Join our development team to build scalable web applications and enterprise software solutions for clients across Kenya.",
     requirements: [
-      "Strong experience with React, Node.js, and Python",
+      "Strong experience with React, Node.js and Python",
       "Database experience with PostgreSQL/MySQL",
       "Experience with cloud platforms (AWS/Azure)",
       "Knowledge of modern development practices",
@@ -27,7 +27,7 @@ const jobOpenings = [
     type: "Full-time",
     experience: "2-4 years",
     description:
-      "Provide strategic IT guidance and system integration services to government agencies, NGOs, and enterprises.",
+      "Provide strategic IT guidance and system integration services to institutions/organizations, government & agencies, NGOs, enterprises and individual clients.",
     requirements: [
       "Experience in IT infrastructure assessment",
       "Knowledge of system integration practices",
@@ -43,7 +43,7 @@ const jobOpenings = [
     type: "Full-time",
     experience: "2-3 years",
     description:
-      "Implement and maintain security solutions, conduct audits, and ensure compliance with data protection regulations.",
+      "Implement and maintain security solutions, conduct audits and ensure compliance with data protection regulations.",
     requirements: [
       "Experience with network security and firewalls",
       "Knowledge of compliance frameworks",
@@ -62,7 +62,7 @@ const jobOpenings = [
       "Start your career with us! Learn from experienced developers while contributing to real-world projects.",
     requirements: [
       "Computer Science degree or equivalent",
-      "Basic programming knowledge (Python, JavaScript, or PHP)",
+      "Basic programming knowledge (Python, JavaScript or PHP)",
       "Eagerness to learn and grow",
       "Strong problem-solving skills",
     ],
@@ -79,7 +79,7 @@ export function JobOpenings() {
             Current <span className="text-primary">Opportunities</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto leading-relaxed">
-            Explore exciting career opportunities with Omni-Legacy Ltd. and help shape the future of technology in
+            Explore exciting career opportunities with Omni-Legacy Co. Ltd. and help shape the future of technology in
             Kenya.
           </p>
         </div>
