@@ -11,7 +11,7 @@ const values = [
   {
     icon: Shield,
     title: "Integrity",
-    description: "Transparent, ethical, and honest in all dealings with clients, partners and stakeholders.",
+    description: "Transparent, ethical and honest in all dealings with clients, partners and stakeholders.",
   },
   {
     icon: Heart,
