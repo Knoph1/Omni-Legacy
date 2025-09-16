@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Linkedin, Mail } from "lucide-react"
@@ -38,41 +39,47 @@ export function TeamSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {founders.map((founder, index) => (
-            <Card key={index} className="border-border overflow-hidden">
-              <div className="aspect-square overflow-hidden">
-                <img
+            <Card
+              key={index}
+              className="border-border rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition"
+            >
+              {/* Image container */}
+              <div className="w-full h-72 md:h-80 overflow-hidden flex items-center justify-center bg-gray-100">
+                <Image
                   src={founder.image || "/placeholder.svg"}
                   alt={founder.name}
-                  src={person.image}
                   width={800}
                   height={800}
-                  className="w-full h-full object-cover"
+                  className="object-cover w-full h-full rounded-b-none"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
+
+              {/* Card content */}
+              <CardContent className="p-6 space-y-4 text-center">
                 <div>
-                  <h3 className="text-xl font-semibold">{founder.name}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">{founder.name}</h3>
                   <p className="text-primary font-medium">{founder.role}</p>
                   <p className="text-sm text-muted-foreground">Ownership: {founder.ownership}</p>
                 </div>
 
                 <p className="text-muted-foreground text-sm leading-relaxed">{founder.bio}</p>
 
-                <div className="bg-background p-3 rounded-lg">
-                  <p className="text-sm italic text-muted-foreground">"{founder.vision}"</p>
+                <div className="bg-background p-3 rounded-lg shadow-inner">
+                  <p className="text-sm italic text-muted-foreground">“{founder.vision}”</p>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center gap-2">
                   {founder.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="text-xs">
+                    <Badge key={skillIndex} variant="secondary" className="text-xs px-2 py-1">
                       {skill}
                     </Badge>
                   ))}
                 </div>
 
-                <div className="flex space-x-2 pt-2">
+                {/* Social buttons */}
+                <div className="flex justify-center space-x-2 pt-2">
                   <Button variant="ghost" size="sm">
                     <Linkedin className="h-4 w-4" />
                   </Button>
