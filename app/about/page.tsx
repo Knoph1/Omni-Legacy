@@ -8,27 +8,27 @@ import { TeamSection } from "@/components/team-section"
 import { CompanyStats } from "@/components/company-stats"
 
 export const metadata: Metadata = {
-  title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company | Mary M. Muraguri CEO",
+  title: "About Omni-Legacy Co. Ltd. | Leading Kenyan IT Company | Mary M. Muraguri CEO",
   description:
-    "Learn about Omni-Legacy Limited (O.L Ltd.), a woman-led Kenyan IT company founded by CEO Mary M. Muraguri and CTO Knoph O. Ayieko. Discover our mission, values and expertise in software development and IT consultancy across Kenya and East Africa.",
+    "Learn about Omni-Legacy Company Limited (O.L Co. Ltd.), a woman-led Kenyan IT company founded by CEO Mary M. Muraguri and CTO Knoph O. Ayieko. Discover our mission, values and expertise in software development and IT consultancy across Kenya and East Africa.",
   keywords: [
-    "Omni-Legacy Limited about",
+    "Omni-Legacy Company Limited about",
     "Mary M. Muraguri CEO",
     "Knoph O. Ayieko CTO",
     "woman-led IT company Kenya",
     "Kenyan IT company founders",
-    "O.L Ltd team",
+    "O.L Co. Ltd. team",
     "IT company Nairobi",
     "software development team Kenya",
     "AGPO certified IT company",
     "East Africa IT services",
   ].join(", "),
   openGraph: {
-    title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company",
+    title: "About Omni-Legacy Co. Ltd. | Leading Kenyan IT Company",
     description:
       "Woman-led Kenyan IT company founded by CEO Mary M. Muraguri. Expert team delivering innovative software solutions across Kenya and East Africa.",
     url: "https://omni-legacy.tech/about",
-    siteName: "Omni-Legacy Ltd.",
+    siteName: "Omni-Legacy Co. Ltd.",
     images: [
       {
         url: "/logo.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Omni-Legacy Ltd. | Leading Kenyan IT Company",
+    title: "About Omni-Legacy Co. Ltd. | Leading Kenyan IT Company",
     description: "Woman-led Kenyan IT company with expert team delivering innovative software solutions.",
     images: ["/logo.png"],
   },
