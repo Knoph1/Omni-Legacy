@@ -12,7 +12,7 @@ const highlights = [
   {
     icon: Award,
     title: "Technical Excellence",
-    description: "Robust, scalable, and secure solutions",
+    description: "Robust, scalable and secure solutions",
   },
   {
     icon: Shield,
@@ -35,7 +35,7 @@ export function PortfolioHighlights() {
             Why Our Projects <span className="text-primary">Stand Out</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto leading-relaxed">
-            Every project we deliver demonstrates our commitment to excellence, innovation, and measurable business
+            Every project we deliver demonstrates our commitment to excellence, innovation and measurable business
             impact.
           </p>
         </div>
