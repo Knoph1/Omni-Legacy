@@ -48,7 +48,7 @@ export function FeaturesSection() {
             </h2>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
               Omni-Legacy Limited combines software development expertise with strategic IT consultancy to deliver
-              tailored solutions for enterprises, government agencies, NGOs, and SMEs across Kenya and beyond.
+              tailored solutions for enterprises, institutions/organizations, government & agencies, NGOs, SMEs and individual clients across Kenya and beyond.
             </p>
           </div>
         </IntersectionObserver>
