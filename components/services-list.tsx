@@ -10,7 +10,7 @@ const services = [
     description:
       "Enterprise software tailored to specific business needs with scalable, integrated solutions using modern technologies.",
     features: [
-      "Web applications, mobile apps, and desktop solutions",
+      "Web applications, mobile apps and desktop solutions",
       "Database-driven solutions (MySQL, PostgreSQL, MongoDB)",
       "Fully scalable and adaptable systems",
       "Integration with existing business systems",
@@ -38,7 +38,7 @@ const services = [
       "Comprehensive security solutions and infrastructure management to protect your business and ensure compliance.",
     features: [
       "Network security audits and assessments",
-      "Firewall, antivirus, and security protocol installation",
+      "Firewall, antivirus and security protocol installation",
       "Cloud security and disaster recovery planning",
       "Compliance with Kenyan Data Protection Act 2019",
     ],
@@ -83,8 +83,8 @@ export function ServicesList() {
             Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
-            At O.L Ltd., we combine technical expertise, strategic insights, and practical solutions to deliver
-            measurable results for businesses, government agencies, NGOs, and SMEs.
+            At O.L Co. Ltd., we combine technical expertise, strategic insights and practical solutions to deliver
+            measurable results for businesses, institutions/organizations, government agencies, NGOs, SMEs and individual clients.
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export function ServicesList() {
               </div>
               <h4 className="font-semibold">Tender & Compliance Ready</h4>
               <p className="text-sm text-muted-foreground">
-                Fully compliant for government, NGO, and corporate contracts
+                Fully compliant for government, NGO and corporate contracts
               </p>
             </div>
             <div className="text-center space-y-2">
@@ -167,7 +167,7 @@ export function ServicesList() {
                 <Code className="h-8 w-8 text-primary" />
               </div>
               <h4 className="font-semibold">End-to-End Service</h4>
-              <p className="text-sm text-muted-foreground">From consulting to deployment, training, and support</p>
+              <p className="text-sm text-muted-foreground">From consulting to deployment, training and support</p>
             </div>
             <div className="text-center space-y-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
