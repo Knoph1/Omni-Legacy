@@ -99,7 +99,7 @@ export function Footer() {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-center md:text-left">
-              &copy; 2025 Omni-Legacy Company Ltd. All Rights Reserved.
+              &copy; 2025 Omni-Legacy Co. Ltd. All Rights Reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
