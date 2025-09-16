@@ -8,9 +8,9 @@ import { CareersBenefits } from "@/components/careers-benefits"
 import { ApplicationProcess } from "@/components/application-process"
 
 export const metadata: Metadata = {
-  title: "IT Jobs Kenya | Software Developer | IT Consultant | Cybersecurity Careers - Omni-Legacy Ltd.",
+  title: "IT Jobs Kenya | Software Developer | IT Consultant | Cybersecurity Careers - Omni-Legacy Co. Ltd.",
   description:
-    "Join Omni-Legacy Limited's growing team in Kenya. Current openings: Senior Full-Stack Developer, IT Consultant, Cybersecurity Specialist, Junior Software Developer. Competitive benefits, remote work options, and career growth opportunities in Nairobi, Mombasa, Eldoret.",
+    "Join Omni-Legacy Company Limited's growing team in Kenya. Current openings: Senior Full-Stack Developer, IT Consultant, Cybersecurity Specialist, Junior Software Developer. Competitive benefits, remote work options and career growth opportunities in Nairobi, Mombasa & Eldoret.",
   keywords: [
     "IT jobs Kenya",
     "software developer jobs Kenya",
@@ -24,17 +24,17 @@ export const metadata: Metadata = {
     "tech company careers Kenya",
   ].join(", "),
   openGraph: {
-    title: "IT Jobs Kenya | Software Developer | IT Consultant Careers - Omni-Legacy Ltd.",
+    title: "IT Jobs Kenya | Software Developer | IT Consultant Careers - Omni-Legacy Co. Ltd.",
     description:
-      "Join our growing IT team in Kenya. Current openings for developers, consultants, and cybersecurity specialists with competitive benefits and growth opportunities.",
+      "Join our growing IT team in Kenya. Current openings for developers, consultants and cybersecurity specialists with competitive benefits and growth opportunities.",
     url: "https://omni-legacy.tech/careers",
-    siteName: "Omni-Legacy Ltd.",
+    siteName: "Omni-Legacy Co. Ltd.",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Omni-Legacy Limited IT Careers Kenya",
+        alt: "Omni-Legacy Company Limited IT Careers Kenya",
       },
     ],
     locale: "en_KE",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IT Jobs Kenya | Software Developer Careers - Omni-Legacy Ltd.",
+    title: "IT Jobs Kenya | Software Developer Careers - Omni-Legacy Co. Ltd.",
     description: "Join our growing IT team in Kenya with competitive benefits and career growth opportunities.",
     images: ["/logo.png"],
   },
