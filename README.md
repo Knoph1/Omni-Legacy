@@ -1,8 +1,8 @@
 # Omni-Legacy  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
-## Omni-Legacy Ltd.
-> O.L Ltd. - Company Website
+## Omni-Legacy Co. Ltd.
+> O.L Co. Ltd. - Company Website
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -19,10 +19,10 @@
 ---
 
 ## Overview
-**Omni-Legacy Ltd. (O.L Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation and project delivery services**.  
+**Omni-Legacy Company Limited (O.L Co. Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation and project delivery services**.  
 This repository contains the **official website** for O.L Ltd., showcasing our **portfolio, services, projects and contact information** for clients, partners and tenders.
 
-**Website:** [www.omni-legacy.tech](http://www.omni-legacy.tech)  
+**Website:** [www.omni-legacy.tech](https://omni-legacy.vercel.app/)  
 **Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
 **Phone:** +254 790 558 956  
 
@@ -32,9 +32,9 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 - **Headquarters:** Nairobi, Kenya  
 - **Branches:** Mombasa & Eldoret  
 - **Founders:**  
-  - Mary M. Muraguri – CEO, Founder & Director (75% Ownership)  
-  - Knoph O. Ayieko – CTO, Co-founder & Co-Director (20% Ownership)  
-- **Mission:** Deliver robust, scalable and compliant IT solutions for businesses, government and NGOs.  
+  - Mary M. Muraguri – CEO, Founder & Director (71% Ownership)  
+  - Knoph O. Ayieko – CTO, Co-Founder & Co-Director (24% Ownership)  
+- **Mission:** Deliver robust, scalable and compliant IT solutions for businesses, institutions/organizations, government & agencies, NGOs, SMEs and individual clients.  
 - **Vision:** Become the leading IT solutions provider in Kenya and East Africa.  
 - **Core Values:** Innovation, Integrity, Client Success, Excellence, Scalability  
 
@@ -43,7 +43,7 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 ## Website Features
 - **Home / Landing Page:** Company introduction, vision, mission, core values and CTA.  
 - **About Page:** Company profile, leadership, history, certifications, credibility.  
-- **Services Page:** Detailed IT & software development services, scope and “Why Choose O.L Ltd.” section.  
+- **Services Page:** Detailed IT & software development services, scope and “Why Choose O.L Co. Ltd.” section.  
 - **Projects / Portfolio Page:** Detailed showcase of IT projects, case studies and outcomes.  
 - **Contact Page:** Interactive contact form, maps to HQ & branches, email & phone integration.  
 - **Dark / Light Mode:** Accessibility-friendly UI toggle.  
@@ -63,7 +63,7 @@ This repository contains the **official website** for O.L Ltd., showcasing our *
 
 ## Project Structure
 ```
-/omni-legacy
+/Omni-Legacy
 ├── public/                 # Static assets (images, logos, favicon)
 ├── src/
 │   ├── components/         # Reusable React components
@@ -132,18 +132,18 @@ We welcome contributions to enhance the website!
 ---
 
 ## Contact
-**Omni-Legacy Ltd. (O.L Ltd.)**  
+**Omni-Legacy Co. Ltd. (O.L Co. Ltd.)**  
 - **Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
 - **Phone:** +254 790 558 956  
-- **Website:** [www.omni-legacy.tech](http://www.omni-legacy.tech)  
+- **Website:** [www.omni-legacy.tech](https://omni-legacy.vercel.app/)  
 - **HQ:** Nairobi, Kenya  
 - **Branches:** Mombasa & Eldoret  
 
 ---
 
 ## License  
-*Developed with care by **Knoph O. Ayieko** – Official Web Developer of **Omni-Legacy Ltd.***  
-> This project is **proprietary software** and is the exclusive property of **Omni-Legacy Ltd.**  
+*Developed with care by **Knoph O. Ayieko** – Official Web Developer of **Omni-Legacy Co. Ltd.***  
+> This project is **proprietary software** and is the exclusive property of **Omni-Legacy Co. Ltd.**  
 Unauthorized use, distribution or modification of this code is strictly prohibited.
 
-© 2025 Omni-Legacy Ltd. – All Rights Reserved.
+© 2025 Omni-Legacy Co. Ltd. – All Rights Reserved.
