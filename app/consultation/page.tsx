@@ -4,9 +4,9 @@ import { Footer } from "@/components/footer"
 import { ConsultationBooking } from "@/components/consultation-booking"
 
 export const metadata: Metadata = {
-  title: "Book IT Consultation Kenya | Expert IT Advice | Strategy & Security - Omni-Legacy Ltd.",
+  title: "Book IT Consultation Kenya | Expert IT Advice | Strategy & Security - Omni-Legacy Co. Ltd.",
   description:
-    "Book paid IT consultation with our experts in Kenya. IT strategy, technical architecture review, cybersecurity assessment, and project scoping sessions. Professional advice from experienced CTO and technical team.",
+    "Book paid IT consultation with our experts in Kenya. IT strategy, technical architecture review, cybersecurity assessment and project scoping sessions. Professional advice from experienced CTO and technical team.",
   keywords: [
     "IT consultation Kenya",
     "IT strategy consultation",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
     "technology consultation",
   ].join(", "),
   openGraph: {
-    title: "Book IT Consultation Kenya | Expert IT Advice - Omni-Legacy Ltd.",
+    title: "Book IT Consultation Kenya | Expert IT Advice - Omni-Legacy Co. Ltd.",
     description:
-      "Book paid IT consultation with our experts. IT strategy, security assessment, and technical architecture review sessions available.",
+      "Book paid IT consultation with our experts. IT strategy, security assessment and technical architecture review sessions available.",
     url: "https://omni-legacy.tech/consultation",
-    siteName: "Omni-Legacy Ltd.",
+    siteName: "Omni-Legacy Co. Ltd.",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Book IT Consultation Kenya - Omni-Legacy Limited",
+        alt: "Book IT Consultation Kenya - Omni-Legacy Company Limited",
       },
     ],
     locale: "en_KE",
@@ -51,8 +51,7 @@ export default function ConsultationPage() {
         <div className="text-center space-y-4 mb-12">
           <h1 className="text-4xl font-bold text-foreground">Book a Consultation</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get expert advice from our IT professionals. Choose from strategy, technical, security, or project
-            consultations.
+            Get expert advice from our IT professionals. Choose from strategy, technical, security or project consultations.
           </p>
         </div>
         <ConsultationBooking />
