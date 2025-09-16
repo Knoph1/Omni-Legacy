@@ -15,7 +15,7 @@ export function HeroSection() {
                 Transforming Ideas Into <span className="text-primary">Innovative Technology Solutions</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground text-pretty leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Omni-Legacy Limited (O.L Ltd.) delivers cutting-edge software, IT services, and digital transformation
+                Omni-Legacy Company Limited (O.L Co. Ltd.) delivers cutting-edge software, IT services and digital transformation
                 solutions across Kenya and East Africa — from Nairobi to Mombasa and Eldoret.
               </p>
             </div>
