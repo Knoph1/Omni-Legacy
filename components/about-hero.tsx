@@ -13,9 +13,9 @@ export function AboutHero() {
                 Pioneering Technology Solutions Across <span className="text-primary">Kenya & East Africa</span>
               </h1>
               <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-                Omni-Legacy Limited (O.L Ltd.) is a Nairobi-based IT company delivering innovative software, IT
-                consultancy, and digital transformation services to enterprises, government agencies, NGOs, and SMEs
-                across Kenya and East Africa.
+                Omni-Legacy Co. Limited (O.L Co. Ltd.) is a Nairobi-based IT company delivering innovative software, IT
+                consultancy and digital transformation services to enterprises, institutions/organizations, government & agencies,
+                NGOs, SMEs and individual clients across Kenya and East Africa.
               </p>
             </div>
 
