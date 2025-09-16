@@ -51,7 +51,7 @@ export function CTASection() {
 
             <div className="pt-8 border-t border-primary-foreground/20">
               <p className="text-primary-foreground/80">
-                Free consultation • Tender-ready solutions • Response within 24 hours
+                Free consultation • Tender-ready solutions • Response within 48 hours
               </p>
             </div>
           </div>
