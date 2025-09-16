@@ -5,21 +5,21 @@ import { Button } from "@/components/ui/button"
 
 const founders = [
   {
-    name: "Mary Muthoni Muraguri",
+    name: "Mary M. Muraguri",
     role: "CEO / Founder / Director",
-    ownership: "75%",
-    bio: "Visionary leader and strategic thinker with expertise in business development, tendering, and governance. Drives company strategy, partnerships, operations, and tender compliance.",
+    ownership: "71%",
+    bio: "Visionary leader and strategic thinker with expertise in business development, tendering and governance. Drives company strategy, partnerships, operations and tender compliance.",
     vision: "Our mission is to create technology solutions that empower businesses and communities across Kenya.",
     image: "/professional-woman-ceo.png",
     skills: ["Business Development", "Strategic Planning", "Governance", "Tender Compliance"],
   },
   {
-    name: "Knoph Oluoch Ayieko",
-    role: "CTO / Cofounder / Co-Director",
-    ownership: "20%",
-    bio: "IT/Web Developer and software specialist with experience in digital health systems, full-stack web development, and IT consultancy. Leads software development, technical strategy, and cybersecurity.",
-    vision: "I aim to create sustainable, innovative, and scalable IT solutions that solve real-world challenges.",
-    image: "/professional-man-cto-tech-leader.jpg",
+    name: "Knoph O. Ayieko",
+    role: "CTO / Co-Founder / Co-Director",
+    ownership: "24%",
+    bio: "IT/Web Developer and software specialist with experience in digital health systems, full-stack web development and IT consultancy. Leads software development, technical strategy and cybersecurity.",
+    vision: "I aim to create sustainable, innovative and scalable IT solutions that solve real-world challenges.",
+    image: "/professional-man-cto-tech-leader.png",
     skills: ["Full-Stack Development", "Digital Health Systems", "Cybersecurity", "Technical Strategy"],
   },
 ]
