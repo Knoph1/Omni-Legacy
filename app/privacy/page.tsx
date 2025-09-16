@@ -13,11 +13,11 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Omni-Legacy Limited ("O.L Ltd.") collects information you provide directly to us, such as when you
-                create an account, request services, or contact us. This may include:
+                Omni-Legacy Company Limited ("O.L Co. Ltd.") collects information you provide directly to us, such as when you
+                create an account, request services or contact us. This may include:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                <li>Name, email address, and contact information</li>
+                <li>Name, email address and contact information</li>
                 <li>Company information and job title</li>
                 <li>Project requirements and technical specifications</li>
                 <li>Payment and billing information</li>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. How We Use Your Information</h2>
               <p className="text-muted-foreground leading-relaxed">We use the information we collect to:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                <li>Provide, maintain, and improve our services</li>
+                <li>Provide, maintain and improve our services</li>
                 <li>Process transactions and send related information</li>
                 <li>Send technical notices and support messages</li>
                 <li>Respond to your comments and questions</li>
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">3. Information Sharing</h2>
               <p className="text-muted-foreground leading-relaxed">
-                We do not sell, trade, or otherwise transfer your personal information to third parties without your
+                We do not sell, trade or otherwise transfer your personal information to third parties without your
                 consent, except as described in this policy. We may share information in the following circumstances:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
@@ -54,8 +54,8 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">4. Data Security</h2>
               <p className="text-muted-foreground leading-relaxed">
                 We implement appropriate technical and organizational measures to protect your personal information
-                against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission
-                over the internet is 100% secure.
+                against unauthorized access, alteration, disclosure or destruction. However, no method of transmission
+                over the internet is 99% secure.
               </p>
             </section>
 
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="bg-muted p-4 rounded-lg mt-4">
-                <p className="text-foreground font-medium">Omni-Legacy Limited</p>
+                <p className="text-foreground font-medium">Omni-Legacy Company Limited</p>
                 <p className="text-muted-foreground">Email: info@omni-legacy.tech</p>
                 <p className="text-muted-foreground">Phone: +254 790 558 956</p>
                 <p className="text-muted-foreground">Address: Nairobi, Kenya</p>
