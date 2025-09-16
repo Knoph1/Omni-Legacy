@@ -45,6 +45,8 @@ export function TeamSection() {
                 <img
                   src={founder.image || "/placeholder.svg"}
                   alt={founder.name}
+                  src={person.image}
+                  height={800}
                   className="w-full h-full object-cover"
                 />
               </div>
