@@ -182,7 +182,7 @@ export function QuoteRequestForm() {
           Get Your Project Quote
         </CardTitle>
         <p className="text-muted-foreground">
-          Tell us about your project and get an instant estimate with a detailed proposal within 24 hours.
+          Tell us about your project and get an instant estimate with a detailed proposal within 48 hours.
         </p>
       </CardHeader>
       <CardContent>
@@ -304,7 +304,7 @@ export function QuoteRequestForm() {
               rows={4}
               value={formData.requirements}
               onChange={(e) => handleInputChange("requirements", e.target.value)}
-              placeholder="Describe your project requirements, goals, and any specific technical needs..."
+              placeholder="Describe your project requirements, goals and any specific technical needs..."
             />
           </div>
 
@@ -323,7 +323,7 @@ export function QuoteRequestForm() {
           </Button>
 
           <p className="text-xs text-muted-foreground text-center">
-            Free consultation included • No obligation • Response within 24 hours
+            Free consultation included • No obligation • Response within 48 hours
           </p>
         </form>
       </CardContent>
