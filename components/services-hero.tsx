@@ -11,7 +11,7 @@ export function ServicesHero() {
             Innovative IT Solutions That <span className="text-primary">Empower Your Business</span>
           </h1>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-            From custom software to IT consultancy and cybersecurity, O.L Ltd. provides end-to-end technology services
+            From custom software to IT consultancy and cybersecurity, O.L Co. Ltd. provides end-to-end technology services
             for organizations across Kenya and East Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
