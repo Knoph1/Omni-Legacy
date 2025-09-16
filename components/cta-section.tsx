@@ -20,8 +20,8 @@ export function CTASection() {
           <div className="text-center space-y-8 max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-5xl font-bold text-balance">Let's Build the Future Together</h2>
             <p className="text-xl text-primary-foreground/90 text-pretty leading-relaxed">
-              Join organizations across Kenya and East Africa that trust Omni-Legacy Ltd. to deliver innovative,
-              reliable, and sustainable IT solutions. Let's discuss how we can transform your business.
+              Join organizations across Kenya and East Africa that trust Omni-Legacy Co. Ltd. to deliver innovative,
+              reliable and sustainable IT solutions. Let's discuss how we can transform your business.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
