@@ -11,26 +11,26 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="/" className="text-2xl font-bold text-primary hover:opacity-80 transition-opacity">
-              Omni-Legacy Ltd.
+              Omni-Legacy Co. Ltd.
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              A woman-led, Kenyan IT company delivering cutting-edge software, IT services, and digital transformation
+              A woman-led, Kenyan IT company delivering cutting-edge software, IT services and digital transformation
               solutions across Kenya and East Africa.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://github.com/omni-legacy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/Knoph1/Omni-Legacy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://twitter.com/omnilegacy" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a href="https://twitter.com/omni-legacy" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://linkedin.com/company/omni-legacy"
+                  href="https://linkedin.com/omni-legacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -99,7 +99,7 @@ export function Footer() {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-center md:text-left">
-              &copy; 2025 Omni-Legacy Ltd. All Rights Reserved.
+              &copy; 2025 Omni-Legacy Company Ltd. All Rights Reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
