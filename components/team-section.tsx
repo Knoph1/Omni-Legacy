@@ -50,8 +50,6 @@ export function TeamSection() {
                 <Image
                   src={founder.image || "/placeholder.svg"}
                   alt={founder.name}
-                  width={800}
-                  height={800}
                   className="object-cover w-full h-full rounded-b-none"
                 />
               </div>
