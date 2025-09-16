@@ -9,15 +9,15 @@ export function CompanyOverview() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-balance">
-                About <span className="text-primary">Omni-Legacy Ltd.</span>
+                About <span className="text-primary">Omni-Legacy Co. Ltd.</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Established in 2025 with headquarters in Nairobi and branches in Mombasa & Eldoret, Omni-Legacy Ltd. was
-                founded to provide end-to-end IT solutions that drive business efficiency, innovation, and growth.
+                Established in 2020 with headquarters in Nairobi and branches in Mombasa & Eldoret, Omni-Legacy Co. Ltd. was
+                founded to provide end-to-end IT solutions that drive business efficiency, innovation and growth.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 We specialize in software development, IT consultancy, digital transformation, cloud solutions,
-                cybersecurity, and technical support for diverse clients across Kenya.
+                cybersecurity and technical support for diverse clients across Kenya.
               </p>
             </div>
 
@@ -26,7 +26,7 @@ export function CompanyOverview() {
                 <CardContent className="p-4 text-center">
                   <Building2 className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Established</p>
-                  <p className="text-sm text-muted-foreground">2025</p>
+                  <p className="text-sm text-muted-foreground">2020</p>
                 </CardContent>
               </Card>
               <Card className="border-border">
@@ -58,7 +58,7 @@ export function CompanyOverview() {
               <h3 className="text-xl font-semibold mb-3 text-primary">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
                 To be the leading technology partner in East Africa, shaping the digital future by providing innovative,
-                reliable, and sustainable IT solutions.
+                reliable and sustainable IT solutions.
               </p>
             </div>
             <div className="bg-muted p-6 rounded-lg">
@@ -66,8 +66,8 @@ export function CompanyOverview() {
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Deliver customized software and IT services to businesses and institutions</li>
                 <li>• Optimize operations through strategic IT consultancy and systems integration</li>
-                <li>• Ensure ongoing technical support, cybersecurity, and operational continuity</li>
-                <li>• Build long-term partnerships with clients, stakeholders, and communities</li>
+                <li>• Ensure ongoing technical support, cybersecurity and operational continuity</li>
+                <li>• Build long-term partnerships with clients, stakeholders and communities</li>
               </ul>
             </div>
           </div>
