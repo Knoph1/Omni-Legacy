@@ -11,7 +11,7 @@ const values = [
   {
     icon: Shield,
     title: "Integrity",
-    description: "Transparent, ethical, and honest in all dealings with clients, partners, and stakeholders.",
+    description: "Transparent, ethical, and honest in all dealings with clients, partners and stakeholders.",
   },
   {
     icon: Heart,
@@ -28,7 +28,7 @@ const values = [
   {
     icon: Handshake,
     title: "Collaboration",
-    description: "Building strong relationships with clients, partners, and stakeholders across Kenya and East Africa.",
+    description: "Building strong relationships with clients, partners and stakeholders across Kenya and East Africa.",
   },
 ]
 
