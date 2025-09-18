@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button"
 const founders = [
   {
     name: "Mary M. Muraguri",
-    role: "CEO / Founder / Director",
-    ownership: "71%",
+    role: "CEO / Director",
+    ownership: "Co-Founder",
     bio: "Visionary leader and strategic thinker with expertise in business development, tendering and governance. Drives company strategy, partnerships, operations and tender compliance.",
     vision: "Our mission is to create technology solutions that empower businesses and communities across Kenya.",
     image: "/professional-woman-ceo.png",
@@ -15,8 +15,8 @@ const founders = [
   },
   {
     name: "Knoph O. Ayieko",
-    role: "CTO / Co-Founder / Co-Director",
-    ownership: "24%",
+    role: "CTO / Co-Director",
+    ownership: "Founder",
     bio: "IT/Web Developer and software specialist with experience in digital health systems, full-stack web development and IT consultancy. Leads software development, technical strategy and cybersecurity.",
     vision: "I aim to create sustainable, innovative and scalable IT solutions that solve real-world challenges.",
     image: "/professional-man-cto-tech-leader.png",
