@@ -8,7 +8,7 @@ const executives = [
     name: "Mary M. Muraguri",
     role: "Chief Executive Officer (CEO) & Managing Director (MD)",
     ownership: "71% Owner • Director",
-    bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance, and business growth. Oversees company strategy, finance, HR, legal compliance, and tender acquisition across government and private sectors.",
+    bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance and business growth. Oversees company strategy, finance, HR, legal compliance and tender acquisition across government and private sectors.",
     vision: "To position Omni-Legacy Co. Ltd. as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and impactful partnerships.",
     image: "/professional-woman-ceo.png",
     skills: ["Business Development", "Strategic Leadership", "Governance", "Tendering", "Investor Relations"],
@@ -18,7 +18,7 @@ const executives = [
     role: "Founder, Chief Technology Officer (CTO) & Director",
     ownership: "24% Owner • Director",
     bio: "Founder and technology strategist with deep expertise in IT, software engineering, and digital health systems. Leads Omni-Legacy’s technology vision, innovation strategy, quality assurance and compliance with industry standards and the Companies Act (Kenya).",
-    vision: "To pioneer scalable, secure, and innovative technology solutions that transform businesses and empower communities across Africa.",
+    vision: "To pioneer scalable, secure and innovative technology solutions that transform businesses and empower communities across Africa.",
     image: "/professional-man-cto-tech-leader.png",
     skills: ["Full-Stack Development", "Cybersecurity", "Digital Health Systems", "Innovation Strategy", "Compliance"],
   },
@@ -42,7 +42,7 @@ export function TeamSection() {
             Meet Our <span className="text-primary">Executive Team</span>
           </h2>
           <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
-            Our leadership combines strategic vision, technical innovation, and operational excellence 
+            Our leadership combines strategic vision, technical innovation and operational excellence 
             to drive Omni-Legacy Co. Ltd. forward as a woman-led technology company in Kenya.
           </p>
         </div>
