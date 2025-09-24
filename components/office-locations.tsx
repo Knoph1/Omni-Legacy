@@ -61,11 +61,6 @@ export function OfficeLocations() {
                   </div>
                 </div>
 
-                <div className="pt-4">
-                  <div className="w-full h-32 bg-muted rounded-lg flex items-center justify-center">
-                    <MapPin className="h-8 w-8 text-muted-foreground" />
-                  </div>
-                </div>
               </CardContent>
             </Card>
           ))}
