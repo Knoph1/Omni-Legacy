@@ -65,25 +65,29 @@ export function TeamSection() {
 
               {/* Content area - uses flex layout so inner parts align across cards */}
               <CardContent className="flex flex-col flex-1 p-6">
-                {/* Header: reserve same space for name+role so status sits at same level */}
+               <CardContent className="flex flex-col flex-1 p-6">
+                {/* Header: fixed block height for name + role */}
                 <header className="mb-2">
-                  <div className="min-h-[64px]">
+                  <div className="min-h-[80px] flex flex-col justify-center">
                     <h3 className="text-xl font-semibold">{exec.name}</h3>
                     <p className="text-primary font-medium mt-1">{exec.role}</p>
                   </div>
-                  {/* status is placed immediately under the reserved top block */}
                   <p className="text-sm text-muted-foreground mt-2">{exec.status}</p>
                 </header>
-
-                {/* Bio grows to fill space equally across cards */}
-                <p className="text-muted-foreground text-sm leading-relaxed flex-1">{exec.bio}</p>
-
-                {/* Quote / vision box with minimum height so cards align visually */}
-                <div className="bg-background p-3 rounded-lg min-h-[72px] flex items-center mt-4">
-                  <p className="text-sm italic text-muted-foreground text-center w-full">"{exec.vision}"</p>
+              
+                {/* Bio expands equally */}
+                <p className="text-muted-foreground text-sm leading-relaxed flex-1">
+                  {exec.bio}
+                </p>
+              
+                {/* Vision / Quote box */}
+                <div className="bg-background p-3 rounded-lg min-h-[96px] flex items-center mt-4">
+                  <p className="text-sm italic text-muted-foreground text-center w-full">
+                    "{exec.vision}"
+                  </p>
                 </div>
-
-                {/* Skills and actions */}
+              
+                {/* Skills + actions pinned to bottom */}
                 <div className="mt-4">
                   <div className="flex flex-wrap gap-2">
                     {exec.skills.map((skill, skillIndex) => (
@@ -92,6 +96,17 @@ export function TeamSection() {
                       </Badge>
                     ))}
                   </div>
+              
+                  <div className="flex space-x-2 pt-3">
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                      <Linkedin className="h-4 w-4" />
+                    </Button>
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                      <Mail className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
 
                   <div className="flex space-x-2 pt-3">
                     <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
