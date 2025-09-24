@@ -47,9 +47,14 @@ export function TeamSection() {
           </p>
         </div>
 
+        {/* mobile-first grid: 1 -> 2 -> 3 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {executives.map((exec, index) => (
-            <Card key={index} className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md">
+            <Card
+              key={index}
+              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md"
+            >
+              {/* Image / visual */}
               <div className="aspect-square overflow-hidden">
                 <img
                   src={exec.image || "/placeholder.svg"}
@@ -57,34 +62,45 @@ export function TeamSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <CardContent className="flex flex-col flex-1 p-6 space-y-4">
-                <div>
-                  <h3 className="text-xl font-semibold">{exec.name}</h3>
-                  <p className="text-primary font-medium">{exec.role}</p>
-                  <p className="text-sm text-muted-foreground">{exec.status}</p>
-                </div>
 
+              {/* Content area - uses flex layout so inner parts align across cards */}
+              <CardContent className="flex flex-col flex-1 p-6">
+                {/* Header: reserve same space for name+role so status sits at same level */}
+                <header className="mb-2">
+                  <div className="min-h-[64px]">
+                    <h3 className="text-xl font-semibold">{exec.name}</h3>
+                    <p className="text-primary font-medium mt-1">{exec.role}</p>
+                  </div>
+                  {/* status is placed immediately under the reserved top block */}
+                  <p className="text-sm text-muted-foreground mt-2">{exec.status}</p>
+                </header>
+
+                {/* Bio grows to fill space equally across cards */}
                 <p className="text-muted-foreground text-sm leading-relaxed flex-1">{exec.bio}</p>
 
-                <div className="bg-background p-3 rounded-lg min-h-[80px] flex items-center">
-                  <p className="text-sm italic text-muted-foreground text-center">"{exec.vision}"</p>
+                {/* Quote / vision box with minimum height so cards align visually */}
+                <div className="bg-background p-3 rounded-lg min-h-[72px] flex items-center mt-4">
+                  <p className="text-sm italic text-muted-foreground text-center w-full">"{exec.vision}"</p>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {exec.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="text-xs">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
+                {/* Skills and actions */}
+                <div className="mt-4">
+                  <div className="flex flex-wrap gap-2">
+                    {exec.skills.map((skill, skillIndex) => (
+                      <Badge key={skillIndex} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
 
-                <div className="flex space-x-2 pt-2">
-                  <Button variant="ghost" size="sm">
-                    <Linkedin className="h-4 w-4" />
-                  </Button>
-                  <Button variant="ghost" size="sm">
-                    <Mail className="h-4 w-4" />
-                  </Button>
+                  <div className="flex space-x-2 pt-3">
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                      <Linkedin className="h-4 w-4" />
+                    </Button>
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                      <Mail className="h-4 w-4" />
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
