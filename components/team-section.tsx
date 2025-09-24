@@ -17,7 +17,7 @@ const executives = [
     name: "Knoph O. Ayieko",
     role: "Founder, Chief Technology Officer (CTO)",
     status: "Director",
-    bio: "Founder and technology strategist with deep expertise in IT, software engineering, and digital health systems. Leads Omni-Legacy’s technology vision, innovation strategy, quality assurance and compliance with industry standards and the Companies Act (Kenya).",
+    bio: "Founder and technology strategist with deep expertise in IT, software engineering and digital health systems. Leads Omni-Legacy’s technology vision, innovation strategy, quality assurance and compliance with industry standards and the Companies Act (Kenya).",
     vision: "To pioneer scalable, secure and innovative technology solutions that transform businesses and empower communities across Africa.",
     image: "/professional-man-cto-tech.png",
     skills: ["Full-Stack Development", "Cybersecurity", "Digital Health Systems", "Innovation Strategy", "Compliance"],
@@ -41,15 +41,15 @@ export function TeamSection() {
           <h2 className="text-3xl lg:text-5xl font-bold text-balance">
             Meet Our <span className="text-primary">Executive Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
             Our leadership combines strategic vision, technical innovation and operational excellence 
             to drive Omni-Legacy Co. Ltd. forward as a woman-led technology company in Kenya.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {executives.map((exec, index) => (
-            <Card key={index} className="border-border overflow-hidden rounded-2xl shadow-md">
+            <Card key={index} className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md">
               <div className="aspect-square overflow-hidden">
                 <img
                   src={exec.image || "/placeholder.svg"}
@@ -57,17 +57,17 @@ export function TeamSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
+              <CardContent className="flex flex-col flex-1 p-6 space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold">{exec.name}</h3>
                   <p className="text-primary font-medium">{exec.role}</p>
                   <p className="text-sm text-muted-foreground">{exec.status}</p>
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed">{exec.bio}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed flex-1">{exec.bio}</p>
 
-                <div className="bg-background p-3 rounded-lg">
-                  <p className="text-sm italic text-muted-foreground">"{exec.vision}"</p>
+                <div className="bg-background p-3 rounded-lg min-h-[80px] flex items-center">
+                  <p className="text-sm italic text-muted-foreground text-center">"{exec.vision}"</p>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
