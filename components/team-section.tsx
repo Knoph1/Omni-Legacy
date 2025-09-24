@@ -47,8 +47,8 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* mobile-first grid: 1 -> 2 -> 3 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Grid with equal-height cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {executives.map((exec, index) => (
             <Card
               key={index}
@@ -64,26 +64,28 @@ export function TeamSection() {
               </div>
 
               {/* Content */}
-              <CardContent className="flex flex-col flex-1 p-6">
-                {/* Header: fixed block height for name + role */}
-                <header className="mb-2">
-                  <div className="min-h-[80px] flex flex-col justify-center">
-                    <h3 className="text-xl font-semibold">{exec.name}</h3>
-                    <p className="text-primary font-medium mt-1">{exec.role}</p>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-2">{exec.status}</p>
-                </header>
+              <CardContent className="flex flex-col flex-1 p-6 justify-between">
+                <div>
+                  {/* Header */}
+                  <header className="mb-2">
+                    <div className="min-h-[80px] flex flex-col justify-center">
+                      <h3 className="text-xl font-semibold">{exec.name}</h3>
+                      <p className="text-primary font-medium mt-1">{exec.role}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-2">{exec.status}</p>
+                  </header>
 
-                {/* Bio */}
-                <p className="text-muted-foreground text-sm leading-relaxed flex-1">
-                  {exec.bio}
-                </p>
-
-                {/* Vision / Quote */}
-                <div className="bg-background p-3 rounded-lg min-h-[96px] flex items-center mt-4">
-                  <p className="text-sm italic text-muted-foreground text-center w-full">
-                    "{exec.vision}"
+                  {/* Bio */}
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {exec.bio}
                   </p>
+
+                  {/* Vision */}
+                  <div className="bg-background p-3 rounded-lg min-h-[140px] flex items-center justify-center mt-4">
+                    <p className="text-sm italic text-muted-foreground text-center">
+                      "{exec.vision}"
+                    </p>
+                  </div>
                 </div>
 
                 {/* Skills + Actions */}
