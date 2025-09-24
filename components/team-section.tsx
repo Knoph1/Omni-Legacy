@@ -73,13 +73,12 @@ export function TeamSection() {
                       <p className="text-primary font-medium mt-1">{exec.role}</p>
                     </div>
                     <p
-                      className={`text-sm mt-2 font-semibold ${
-                        exec.status === "Director" ? "text-primary" : "text-muted-foreground"
+                      className={`text-sm mt-2 italic ${
+                        exec.status === "Director" ? "font-bold" : "text-muted-foreground"
                       }`}
                     >
                       {exec.status}
                     </p>
-
                   </header>
 
                   {/* Bio */}
