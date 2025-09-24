@@ -9,12 +9,12 @@ const offices = [
     isHQ: true,
   },
   {
-    name: "Mombasa Branch",
+    name: "Mombasa Office",
     address: "Mombasa, Kenya",
     description: "Coastal region operations and client services",
   },
   {
-    name: "Eldoret Branch",
+    name: "Eldoret Office",
     address: "Eldoret, Kenya",
     description: "Rift Region & Western Kenya operations and support",
   },
