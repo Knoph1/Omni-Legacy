@@ -15,7 +15,7 @@ const executives = [
   },
   {
     name: "Knoph O. Ayieko",
-    role: "Founder, Chief Technology Officer (CTO)",
+    role: "Chief Technology Officer (CTO)",
     status: "Director",
     bio: "Founder and technology strategist with deep expertise in IT, software engineering and digital health systems. Leads Omni-Legacy’s technology vision, innovation strategy, quality assurance and compliance with industry standards and the Companies Act (Kenya).",
     vision: "To pioneer scalable, secure and innovative technology solutions that transform businesses and empower communities across Africa.",
@@ -25,7 +25,7 @@ const executives = [
   {
     name: "MaryAnn H. Agau",
     role: "Chief Operations & Partnerships Officer (COPO)",
-    status: "Not a Director",
+    status: "Non-Director",
     bio: "Operations and partnerships specialist ensuring efficiency, collaboration and execution. Oversees company operations, project management, tender documentation and partnership development while aligning strategy with the CEO and CTO.",
     vision: "To drive operational excellence and build strong partnerships that enable Omni-Legacy to deliver value-driven projects and solutions.",
     image: "/professional-woman-copo.png",
