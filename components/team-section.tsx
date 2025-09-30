@@ -37,6 +37,7 @@ export function TeamSection() {
   return (
     <section id="executives" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-balance">
             Meet Our <span className="text-primary">Executive Team</span>
@@ -47,72 +48,72 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* Grid with equal-height cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        {/* Equal-height grid cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-stretch">
           {executives.map((exec, index) => (
-          <Card
-            key={index}
-            className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0"
-          >
-            {/* Image */}
-            <img
-              src={exec.image || "/placeholder.svg"}
-              alt={exec.name}
-              className="w-full h-auto object-contain rounded-t-2xl m-0"
-            />
+            <Card
+              key={index}
+              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md"
+            >
+              {/* Standardized Image Container */}
+              <div className="w-full h-64 flex items-end justify-center overflow-hidden bg-white">
+                <img
+                  src={exec.image || "/placeholder.svg"}
+                  alt={exec.name}
+                  className="h-full object-contain"
+                />
+              </div>
 
-            {/* Content */}
-            <CardContent className="flex flex-col flex-1 p-6 justify-between">
-              <div>
-                {/* Header */}
-                <header className="mb-2">
-                  <div className="min-h-[80px] flex flex-col justify-center">
+              {/* Content */}
+              <CardContent className="flex flex-col flex-1 p-6 justify-between">
+                <div className="flex flex-col flex-1">
+                  {/* Header */}
+                  <header className="mb-3 text-center">
                     <h3 className="text-xl font-semibold">{exec.name}</h3>
                     <p className="text-primary font-medium mt-1">{exec.role}</p>
+                    <p
+                      className={`text-sm mt-1 italic ${
+                        exec.status === "Director" ? "font-bold" : "text-muted-foreground"
+                      }`}
+                    >
+                      {exec.status}
+                    </p>
+                  </header>
+
+                  {/* Bio */}
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">
+                    {exec.bio}
+                  </p>
+
+                  {/* Vision */}
+                  <div className="bg-background p-3 rounded-lg flex items-center justify-center mt-4 flex-1">
+                    <p className="text-sm italic text-muted-foreground text-center">
+                      "{exec.vision}"
+                    </p>
                   </div>
-                  <p
-                    className={`text-sm mt-2 italic ${
-                      exec.status === "Director" ? "font-bold" : "text-muted-foreground"
-                    }`}
-                  >
-                    {exec.status}
-                  </p>
-                </header>
-
-                {/* Bio */}
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {exec.bio}
-                </p>
-
-                {/* Vision */}
-                <div className="bg-background p-3 rounded-lg min-h-[140px] flex items-center justify-center mt-4">
-                  <p className="text-sm italic text-muted-foreground text-center">
-                    "{exec.vision}"
-                  </p>
-                </div>
-              </div>
-
-              {/* Skills + Actions */}
-              <div className="mt-4">
-                <div className="flex flex-wrap gap-2">
-                  {exec.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="text-xs">
-                      {skill}
-                    </Badge>
-                  ))}
                 </div>
 
-                <div className="flex space-x-2 pt-3">
-                  <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
-                    <Linkedin className="h-4 w-4" />
-                  </Button>
-                  <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
-                    <Mail className="h-4 w-4" />
-                  </Button>
+                {/* Skills + Actions */}
+                <div className="mt-4">
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {exec.skills.map((skill, skillIndex) => (
+                      <Badge key={skillIndex} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <div className="flex justify-center space-x-2 pt-3">
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                      <Linkedin className="h-4 w-4" />
+                    </Button>
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                      <Mail className="h-4 w-4" />
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
