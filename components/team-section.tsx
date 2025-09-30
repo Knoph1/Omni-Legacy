@@ -49,69 +49,70 @@ export function TeamSection() {
 
         {/* Grid with equal-height cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-            <Card
-              key={index}
-              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0"
-            >
-              {/* Image */}
-              <img
-                src={exec.image || "/placeholder.svg"}
-                alt={exec.name}
-                className="w-full h-auto object-contain rounded-t-2xl m-0"
-              />
-              
-              {/* Content */}
-              <CardContent className="flex flex-col flex-1 p-6 justify-between">
-                <div>
-                  {/* Header */}
-                  <header className="mb-2">
-                    <div className="min-h-[80px] flex flex-col justify-center">
-                      <h3 className="text-xl font-semibold">{exec.name}</h3>
-                      <p className="text-primary font-medium mt-1">{exec.role}</p>
-                    </div>
-                    <p
-                      className={`text-sm mt-2 italic ${
-                        exec.status === "Director" ? "font-bold" : "text-muted-foreground"
-                      }`}
-                    >
-                      {exec.status}
-                    </p>
-                  </header>
+          {executives.map((exec, index) => (
+          <Card
+            key={index}
+            className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0"
+          >
+            {/* Image */}
+            <img
+              src={exec.image || "/placeholder.svg"}
+              alt={exec.name}
+              className="w-full h-auto object-contain rounded-t-2xl m-0"
+            />
 
-                  {/* Bio */}
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {exec.bio}
+            {/* Content */}
+            <CardContent className="flex flex-col flex-1 p-6 justify-between">
+              <div>
+                {/* Header */}
+                <header className="mb-2">
+                  <div className="min-h-[80px] flex flex-col justify-center">
+                    <h3 className="text-xl font-semibold">{exec.name}</h3>
+                    <p className="text-primary font-medium mt-1">{exec.role}</p>
+                  </div>
+                  <p
+                    className={`text-sm mt-2 italic ${
+                      exec.status === "Director" ? "font-bold" : "text-muted-foreground"
+                    }`}
+                  >
+                    {exec.status}
                   </p>
+                </header>
 
-                  {/* Vision */}
-                  <div className="bg-background p-3 rounded-lg min-h-[140px] flex items-center justify-center mt-4">
-                    <p className="text-sm italic text-muted-foreground text-center">
-                      "{exec.vision}"
-                    </p>
-                  </div>
+                {/* Bio */}
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {exec.bio}
+                </p>
+
+                {/* Vision */}
+                <div className="bg-background p-3 rounded-lg min-h-[140px] flex items-center justify-center mt-4">
+                  <p className="text-sm italic text-muted-foreground text-center">
+                    "{exec.vision}"
+                  </p>
+                </div>
+              </div>
+
+              {/* Skills + Actions */}
+              <div className="mt-4">
+                <div className="flex flex-wrap gap-2">
+                  {exec.skills.map((skill, skillIndex) => (
+                    <Badge key={skillIndex} variant="secondary" className="text-xs">
+                      {skill}
+                    </Badge>
+                  ))}
                 </div>
 
-                {/* Skills + Actions */}
-                <div className="mt-4">
-                  <div className="flex flex-wrap gap-2">
-                    {exec.skills.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="secondary" className="text-xs">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-
-                  <div className="flex space-x-2 pt-3">
-                    <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
-                      <Linkedin className="h-4 w-4" />
-                    </Button>
-                    <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
-                      <Mail className="h-4 w-4" />
-                    </Button>
-                  </div>
+                <div className="flex space-x-2 pt-3">
+                  <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                    <Linkedin className="h-4 w-4" />
+                  </Button>
+                  <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                    <Mail className="h-4 w-4" />
+                  </Button>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
           ))}
         </div>
       </div>
