@@ -52,16 +52,19 @@ export function TeamSection() {
           {executives.map((exec, index) => (
             <Card
               key={index}
-              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md"
+              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0" // 🔑 remove inner padding
             >
               {/* Image */}
-              <div className="w-full h-80 overflow-hidden">
-                <img
-                  src={exec.image || "/placeholder.svg"}
-                  alt={exec.name}
-                  className="w-full h-full object-contain rounded-t-2xl"
-                />
-              </div>
+              <img
+                src={exec.image || "/placeholder.svg"}
+                alt={exec.name}
+                className="w-full h-auto object-contain rounded-t-2xl m-0" // 🔑 no margin
+              />
+            
+              <CardContent className="flex flex-col flex-1 p-6 justify-between">
+                ...
+              </CardContent>
+            </Card>
 
               {/* Content */}
               <CardContent className="flex flex-col flex-1 p-6 justify-between">
