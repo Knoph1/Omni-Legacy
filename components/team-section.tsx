@@ -49,23 +49,17 @@ export function TeamSection() {
 
         {/* Grid with equal-height cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-          {executives.map((exec, index) => (
             <Card
               key={index}
-              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0" // 🔑 remove inner padding
+              className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0"
             >
               {/* Image */}
               <img
                 src={exec.image || "/placeholder.svg"}
                 alt={exec.name}
-                className="w-full h-auto object-contain rounded-t-2xl m-0" // 🔑 no margin
+                className="w-full h-auto object-contain rounded-t-2xl m-0"
               />
-            
-              <CardContent className="flex flex-col flex-1 p-6 justify-between">
-                ...
-              </CardContent>
-            </Card>
-
+              
               {/* Content */}
               <CardContent className="flex flex-col flex-1 p-6 justify-between">
                 <div>
