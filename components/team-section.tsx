@@ -55,11 +55,11 @@ export function TeamSection() {
               className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md"
             >
               {/* Image */}
-              <div className="aspect-square overflow-hidden">
+              <div className="w-full">
                 <img
                   src={exec.image || "/placeholder.svg"}
                   alt={exec.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain rounded-t-2xl"
                 />
               </div>
 
