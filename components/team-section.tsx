@@ -96,7 +96,12 @@ export function TeamSection() {
               <div className="mt-4">
                 <div className="flex flex-wrap gap-2">
                   {exec.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="text-xs">
+                    <Badge
+                      key={skillIndex}
+                      variant="secondary"
+                      className="text-xs transition-colors duration-200 cursor-pointer 
+                                 hover:bg-primary hover:text-primary-foreground"
+                    >
                       {skill}
                     </Badge>
                   ))}
