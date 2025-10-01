@@ -66,7 +66,7 @@ export function TeamSection() {
               <div>
                 {/* Header */}
                 <header className="mb-2">
-                  <div className="min-h-[80px] flex flex-col justify-center">
+                  <div className="min-h-[100px] flex flex-col justify-start items-center text-center">
                     <h3 className="text-xl font-semibold">{exec.name}</h3>
                     <p className="text-primary font-medium mt-1">{exec.role}</p>
                   </div>
