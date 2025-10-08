@@ -19,7 +19,7 @@ const executives = [
     status: "Director",
     bio: "Founder and technology strategist with deep expertise in IT, software engineering and digital health systems. Leads Omni-Legacy’s technology vision, innovation strategy, quality assurance and compliance with industry standards and the Companies Act (Kenya).",
     vision: "To pioneer scalable, secure and innovative technology solutions that transform businesses and empower communities across Africa.",
-    image: "/cto - knoph.png",
+    image: "/CTO - Knoph Ayieko.png",
     skills: ["Full-Stack Development", "Cybersecurity", "Digital Systems", "Innovation Strategy", "Compliance", "Systems Architecture", "Cloud & Infrastructure Management", "Data & AI Integration", "DevOps & Automation"],
   },
   {
