@@ -20,7 +20,7 @@ export function AboutHero() {
             </div>
 
             <Button size="lg" asChild>
-              <Link href="/team-section" className="flex items-center gap-2">
+              <Link href="/about#executives" className="flex items-center gap-2">
                 Meet Our Founders
                 <ArrowRight className="h-5 w-5" />
               </Link>
