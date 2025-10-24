@@ -1,8 +1,7 @@
-"use client"
-
+import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const executives = [
@@ -114,8 +113,19 @@ const executives = [
 ]
 
 export function TeamSection() {
+  const scrollRef = useRef(null)
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -300 : 300,
+        behavior: "smooth",
+      })
+    }
+  }
+
   return (
-    <section id="executives" className="py-20 bg-muted">
+    <section id="executives" className="py-20 bg-muted relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
@@ -129,18 +139,41 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* Executives Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Scroll Buttons */}
+        <div className="flex justify-between items-center mb-6">
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => scroll("left")}
+            aria-label="Scroll Left"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => scroll("right")}
+            aria-label="Scroll Right"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </Button>
+        </div>
+
+        {/* Scrollable Executives */}
+        <div
+          ref={scrollRef}
+          className="flex space-x-6 overflow-x-auto scrollbar-thin scrollbar-thumb-primary/40 scrollbar-track-muted/20 pb-4 snap-x snap-mandatory"
+        >
           {executives.map((exec, index) => {
             const statuses = exec.status.split("|").map((s) => s.trim())
 
             return (
               <Card
                 key={index}
-                className="flex flex-col h-full border border-border overflow-hidden rounded-2xl shadow-md transition-transform hover:scale-[1.02]"
+                className="flex flex-col min-w-[320px] max-w-[360px] flex-shrink-0 border border-border rounded-2xl shadow-md snap-center bg-background transition-transform hover:scale-[1.02] h-[820px]"
               >
-                {/* Image Section */}
-                <div className="w-full h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+                {/* Image */}
+                <div className="w-full h-64 overflow-hidden">
                   <img
                     src={exec.image || "/placeholder.svg"}
                     alt={exec.name}
@@ -148,17 +181,15 @@ export function TeamSection() {
                   />
                 </div>
 
-                {/* Content Section */}
-                <CardContent className="flex flex-col flex-1 p-6 justify-between">
+                {/* Content */}
+                <CardContent className="flex flex-col justify-between flex-1 p-6">
                   <div className="flex flex-col flex-grow space-y-4 text-center">
-                    {/* Header */}
                     <div>
                       <h3 className="text-xl font-semibold">{exec.name}</h3>
                       <p className="text-primary font-medium mt-1">
                         {exec.role}
                       </p>
 
-                      {/* Status */}
                       <p className="text-sm mt-2 text-muted-foreground">
                         {statuses.map((status, i) => (
                           <span key={i} className="inline-flex items-center">
@@ -185,12 +216,10 @@ export function TeamSection() {
                       </p>
                     </div>
 
-                    {/* Bio */}
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
                       {exec.bio}
                     </p>
 
-                    {/* Vision */}
                     <div className="bg-background p-3 rounded-lg min-h-[100px] flex items-center justify-center">
                       <p className="text-sm italic text-muted-foreground text-center">
                         “{exec.vision}”
@@ -198,7 +227,6 @@ export function TeamSection() {
                     </div>
                   </div>
 
-                  {/* Skills */}
                   <div className="mt-4 flex flex-wrap gap-2 justify-center">
                     {exec.skills.map((skill, skillIndex) => (
                       <Badge
@@ -211,20 +239,11 @@ export function TeamSection() {
                     ))}
                   </div>
 
-                  {/* Social Icons */}
                   <div className="flex space-x-2 pt-4 justify-center">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      aria-label={`${exec.name} LinkedIn`}
-                    >
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
                       <Linkedin className="h-4 w-4" />
                     </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      aria-label={`${exec.name} Email`}
-                    >
+                    <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
                       <Mail className="h-4 w-4" />
                     </Button>
                   </div>
