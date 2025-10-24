@@ -160,12 +160,10 @@ export function TeamSection() {
 
                           // Add separators (not italic) between statuses
                           return (
-                            <span key={i} className="flex items-center">
+                            <span key={i} className="inline-flex items-center">
                               {element}
                               {i < statuses.length - 1 && (
-                                <span className="not-italic mx-1 text-muted-foreground">
-                                  |
-                                </span>
+                                <span className="not-italic mx-1 text-muted-foreground">|</span>
                               )}
                             </span>
                           )
