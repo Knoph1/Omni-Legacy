@@ -114,8 +114,18 @@ const executives = [
 ]
 
 export function TeamSection() {
+  const scrollRef = useRef(null)
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current
+      const scrollAmount = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
+      scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" })
+    }
+  }
+
   return (
-    <section id="executives" className="py-20 bg-muted">
+    <section id="executives" className="py-20 bg-muted relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
@@ -123,110 +133,112 @@ export function TeamSection() {
             Meet Our <span className="text-primary">Executive Team</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our leadership combines strategic vision, technical innovation and
-            operational excellence to drive Omni-Legacy Co. Ltd. forward as a
-            woman-led technology company in Kenya.
+            Our leadership combines strategic vision, technical innovation and operational excellence to drive Omni-Legacy Co. Ltd. forward as a woman-led technology company in Kenya.
           </p>
         </div>
 
-        {/* Executive Grig, Scrollable Carousel */}
+        {/* Scrollable Executive Cards */}
         <div className="relative">
-          <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-6 pb-6 px-2">
+          {/* Scroll Buttons */}
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => scroll("left")}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background/70 backdrop-blur-sm rounded-full shadow-md hover:bg-primary hover:text-primary-foreground"
+          >
+            <ChevronLeft className="h-6 w-6" />
+          </Button>
+
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-6 pb-4 scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-muted"
+          >
             {executives.map((exec, index) => {
               const statuses = exec.status.split("|").map((s) => s.trim())
-
               return (
                 <Card
                   key={index}
-                  className="min-w-[320px] sm:min-w-[360px] lg:min-w-[380px] flex-shrink-0 snap-center border-border rounded-2xl shadow-md overflow-hidden"
+                  className="flex-shrink-0 w-[340px] sm:w-[380px] lg:w-[420px] border-border overflow-hidden rounded-2xl shadow-md snap-center bg-background"
                 >
-                  {/* Executive Image */}
                   <img
                     src={exec.image || "/placeholder.svg"}
                     alt={exec.name}
-                    className="w-full h-56 object-contain bg-background rounded-t-2xl"
+                    className="w-full h-64 object-contain bg-muted rounded-t-2xl"
                   />
 
-                  {/* Executive Content */}
-                  <CardContent className="flex flex-col flex-1 p-6 justify-between">
-                    <div>
-                      {/* Header */}
-                      <header className="mb-2 text-center">
-                        <div className="min-h-[90px] flex flex-col justify-start items-center">
-                          <h3 className="text-xl font-semibold">{exec.name}</h3>
-                          <p className="text-primary font-medium mt-1">{exec.role}</p>
-                        </div>
+                  <CardContent className="flex flex-col p-6 space-y-3">
+                    {/* Header */}
+                    <header className="text-center">
+                      <h3 className="text-xl font-semibold">{exec.name}</h3>
+                      <p className="text-primary font-medium">{exec.role}</p>
+                      <p className="text-sm mt-2 text-muted-foreground">
+                        {statuses.map((status, i) => {
+                          let element
+                          if (status === "Founder")
+                            element = <span key={status} className="font-semibold">Founder</span>
+                          else if (status === "Owner")
+                            element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
+                          else if (status === "Director")
+                            element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
+                          else if (status === "Non-Director")
+                            element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
 
-                        {/* Status Section */}
-                        <p className="text-sm mt-2 italic text-muted-foreground">
-                          {statuses.map((status, i) => {
-                            let element = null
-
-                            if (status === "Founder") {
-                              element = <span key={status} className="font-semibold">Founder</span>
-                            } else if (status === "Owner") {
-                              element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
-                            } else if (status === "Director") {
-                              element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
-                            } else if (status === "Non-Director") {
-                              element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
-                            }
-
-                            // Separator (not italic)
-                            return (
-                              <span key={i} className="inline-flex items-center">
-                                {element}
-                                {i < statuses.length - 1 && (
-                                  <span className="not-italic mx-1 text-muted-foreground">|</span>
-                                )}
-                              </span>
-                            )
-                          })}
-                        </p>
-                      </header>
-
-                      {/* Bio */}
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {exec.bio}
+                          return (
+                            <span key={i} className="inline-flex items-center">
+                              {element}
+                              {i < statuses.length - 1 && (
+                                <span className="not-italic mx-1 text-muted-foreground">|</span>
+                              )}
+                            </span>
+                          )
+                        })}
                       </p>
+                    </header>
 
-                      {/* Vision */}
-                      <div className="bg-background p-3 rounded-lg min-h-[120px] flex items-center justify-center mt-4">
-                        <p className="text-sm italic text-muted-foreground text-center">
-                          "{exec.vision}"
-                        </p>
-                      </div>
+                    {/* Bio */}
+                    <p className="text-sm text-muted-foreground leading-relaxed">{exec.bio}</p>
+
+                    {/* Vision */}
+                    <div className="bg-muted p-3 rounded-lg min-h-[100px] flex items-center justify-center">
+                      <p className="text-sm italic text-center text-muted-foreground">"{exec.vision}"</p>
                     </div>
 
-                    {/* Skills & Actions */}
-                    <div className="mt-4">
-                      <div className="flex flex-wrap gap-2 justify-center">
-                        {exec.skills.map((skill, skillIndex) => (
-                          <Badge
-                            key={skillIndex}
-                            variant="secondary"
-                            className="text-xs transition-colors duration-200 cursor-pointer hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
+                    {/* Skills */}
+                    <div className="flex flex-wrap gap-2">
+                      {exec.skills.map((skill, skillIndex) => (
+                        <Badge
+                          key={skillIndex}
+                          variant="secondary"
+                          className="text-xs transition-colors duration-200 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
 
-                      {/* Social Icons */}
-                      <div className="flex space-x-2 pt-3 justify-center">
-                        <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
-                          <Linkedin className="h-4 w-4" />
-                        </Button>
-                        <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
-                          <Mail className="h-4 w-4" />
-                        </Button>
-                      </div>
+                    {/* Socials */}
+                    <div className="flex justify-center space-x-2 pt-2">
+                      <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                        <Linkedin className="h-4 w-4" />
+                      </Button>
+                      <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                        <Mail className="h-4 w-4" />
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
               )
             })}
           </div>
+
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => scroll("right")}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background/70 backdrop-blur-sm rounded-full shadow-md hover:bg-primary hover:text-primary-foreground"
+          >
+            <ChevronRight className="h-6 w-6" />
+          </Button>
         </div>
       </div>
     </section>
