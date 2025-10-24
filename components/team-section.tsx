@@ -107,21 +107,20 @@ export function TeamSection() {
                     <p className="text-sm mt-2 italic text-muted-foreground">
                       {exec.status?.includes("Founder") && (
                         <>
-                          <span className="font-semibold">FOUNDER</span>{" "}
-                          <span className="font-semibold">FOUNDER</span>{" "}
+                          <span className="font-semibold">Founder</span>{" "}
                         </>
                       )}
 
                       {exec.status?.includes("Owner") && (
-                        <span className="italic font-normal">OWNER</span>
+                        <span className="italic font-normal">Owner</span>
                       )}
 
                       {exec.status?.includes("Director") && (
-                        <span className="font-bold not-italic">DIRECTOR</span>
+                        <span className="font-bold not-italic">Director</span>
                       )}
 
                       {exec.status?.includes("Non-Director") && (
-                        <span className="italic font-normal">NON-DIRECTOR</span>
+                        <span className="italic font-normal">Non-Director</span>
                       )}
                     </p>
                   </header>
