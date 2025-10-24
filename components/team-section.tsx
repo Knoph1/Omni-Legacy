@@ -129,134 +129,104 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* Executives Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-          {executives.map((exec, index) => {
-            const statuses = exec.status.split("|").map((s) => s.trim())
+        {/* Executive Grig, Scrollable Carousel */}
+        <div className="relative">
+          <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-6 pb-6 px-2">
+            {executives.map((exec, index) => {
+              const statuses = exec.status.split("|").map((s) => s.trim())
 
-            return (
-              <Card
-                key={index}
-                className="flex flex-col h-full border-border overflow-hidden rounded-2xl shadow-md p-0"
-              >
-                {/* Executive Image */}
-                <img
-                  src={exec.image || "/placeholder.svg"}
-                  alt={exec.name}
-                  className="w-full h-auto object-contain rounded-t-2xl m-0"
-                />
+              return (
+                <Card
+                  key={index}
+                  className="min-w-[320px] sm:min-w-[360px] lg:min-w-[380px] flex-shrink-0 snap-center border-border rounded-2xl shadow-md overflow-hidden"
+                >
+                  {/* Executive Image */}
+                  <img
+                    src={exec.image || "/placeholder.svg"}
+                    alt={exec.name}
+                    className="w-full h-56 object-contain bg-background rounded-t-2xl"
+                  />
 
-                {/* Executive Content */}
-                <CardContent className="flex flex-col flex-1 p-6 justify-between">
-                  <div>
-                    {/* Header */}
-                    <header className="mb-2 text-center">
-                      <div className="min-h-[100px] flex flex-col justify-start items-center">
-                        <h3 className="text-xl font-semibold">{exec.name}</h3>
-                        <p className="text-primary font-medium mt-1">
-                          {exec.role}
+                  {/* Executive Content */}
+                  <CardContent className="flex flex-col flex-1 p-6 justify-between">
+                    <div>
+                      {/* Header */}
+                      <header className="mb-2 text-center">
+                        <div className="min-h-[90px] flex flex-col justify-start items-center">
+                          <h3 className="text-xl font-semibold">{exec.name}</h3>
+                          <p className="text-primary font-medium mt-1">{exec.role}</p>
+                        </div>
+
+                        {/* Status Section */}
+                        <p className="text-sm mt-2 italic text-muted-foreground">
+                          {statuses.map((status, i) => {
+                            let element = null
+
+                            if (status === "Founder") {
+                              element = <span key={status} className="font-semibold">Founder</span>
+                            } else if (status === "Owner") {
+                              element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
+                            } else if (status === "Director") {
+                              element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
+                            } else if (status === "Non-Director") {
+                              element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
+                            }
+
+                            // Separator (not italic)
+                            return (
+                              <span key={i} className="inline-flex items-center">
+                                {element}
+                                {i < statuses.length - 1 && (
+                                  <span className="not-italic mx-1 text-muted-foreground">|</span>
+                                )}
+                              </span>
+                            )
+                          })}
+                        </p>
+                      </header>
+
+                      {/* Bio */}
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {exec.bio}
+                      </p>
+
+                      {/* Vision */}
+                      <div className="bg-background p-3 rounded-lg min-h-[120px] flex items-center justify-center mt-4">
+                        <p className="text-sm italic text-muted-foreground text-center">
+                          "{exec.vision}"
                         </p>
                       </div>
-
-                      {/* Status Section */}
-                      <p className="text-sm mt-2 italic text-muted-foreground">
-                        {statuses.map((status, i) => {
-                          let element = null
-
-                          if (status === "Founder") {
-                            element = (
-                              <span
-                                key={status}
-                                className="font-semibold"
-                              >
-                                Founder
-                              </span>
-                            )
-                          } else if (status === "Owner") {
-                            element = (
-                              <span
-                                key={status}
-                                className="italic font-normal text-muted-foreground"
-                              >
-                                Owner
-                              </span>
-                            )
-                          } else if (status === "Director") {
-                            element = (
-                              <span
-                                key={status}
-                                className="font-bold not-italic text-foreground"
-                              >
-                                Director
-                              </span>
-                            )
-                          } else if (status === "Non-Director") {
-                            element = (
-                              <span
-                                key={status}
-                                className="italic font-normal text-muted-foreground"
-                              >
-                                Non-Director
-                              </span>
-                            )
-                          }
-
-                          // Adding separator that is not italic but on same paragraph as status
-                          return (
-                            <span key={i} className="inline-flex items-center">
-                              {element}
-                              {i < statuses.length - 1 && (
-                                <span className="not-italic mx-1 text-muted-foreground">
-                                  |
-                                </span>
-                              )}
-                            </span>
-                          )
-                        })}
-                      </p>
-                    </header>
-
-                    {/* Bio */}
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {exec.bio}
-                    </p>
-
-                    {/* Vision */}
-                    <div className="bg-background p-3 rounded-lg min-h-[140px] flex items-center justify-center mt-4">
-                      <p className="text-sm italic text-muted-foreground text-center">
-                        "{exec.vision}"
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Skills & Actions */}
-                  <div className="mt-4">
-                    <div className="flex flex-wrap gap-2">
-                      {exec.skills.map((skill, skillIndex) => (
-                        <Badge
-                          key={skillIndex}
-                          variant="secondary"
-                          className="text-xs transition-colors duration-200 cursor-pointer hover:bg-primary hover:text-primary-foreground"
-                        >
-                          {skill}
-                        </Badge>
-                      ))}
                     </div>
 
-                    {/* Social Icons */}
-                    <div className="flex space-x-2 pt-3 justify-center">
-                      <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
-                        <Linkedin className="h-4 w-4" />
-                      </Button>
-                      <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
-                        <Mail className="h-4 w-4" />
-                      </Button>
+                    {/* Skills & Actions */}
+                    <div className="mt-4">
+                      <div className="flex flex-wrap gap-2 justify-center">
+                        {exec.skills.map((skill, skillIndex) => (
+                          <Badge
+                            key={skillIndex}
+                            variant="secondary"
+                            className="text-xs transition-colors duration-200 cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                          >
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+
+                      {/* Social Icons */}
+                      <div className="flex space-x-2 pt-3 justify-center">
+                        <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                          <Linkedin className="h-4 w-4" />
+                        </Button>
+                        <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                          <Mail className="h-4 w-4" />
+                        </Button>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )
-          })}
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
