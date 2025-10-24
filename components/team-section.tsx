@@ -56,8 +56,7 @@ const executives = [
     bio: "Finance and compliance professional with broad experience in governance, audit and regulatory affairs. Oversees financial planning, resource optimization and compliance with statutory and industry standards, ensuring Omni-Legacy remains financially sound and operationally accountable.",
     vision:
       "To build a strong financial and compliance framework that supports innovation, transparency and sustainable growth at Omni-Legacy Co. Ltd.",
-    image: "/CTO - Knoph Ayieko.png",
-    // /moses-kimutai-cfco.png
+    image: "/moses-kimutai-cfco.png",
     skills: [
       "Financial Strategy & Planning",
       "Corporate Governance",
@@ -99,8 +98,7 @@ const executives = [
     bio: "Strategy and innovation expert focused on future-proofing the company through research, market insights and growth initiatives. Drives Omni-Legacy’s innovation agenda, aligning technological advancement with long-term strategic priorities and client impact.",
     vision:
       "To drive innovation and strategic foresight that strengthen Omni-Legacy’s position as a leader in technology and sustainable business growth.",
-    image: "/maryann-agau-cppo.png",
-    // /gaudencia-nyarangi-csio.png
+    image: "/gaudencia-nyarangi-csio.png",
     skills: [
       "Strategic Planning",
       "Innovation Management",
@@ -131,19 +129,19 @@ export function TeamSection() {
   return (
     <section id="executives" className="py-20 bg-muted relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-balance">
+          <h2 className="text-3xl lg:text-5xl font-bold">
             Meet Our <span className="text-primary">Executive Team</span>
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Our leadership combines strategic vision, technical innovation and operational excellence to drive Omni-Legacy Co. Ltd. forward as a woman-led technology company in Kenya.
           </p>
         </div>
 
-        {/* Scrollable Executive Cards */}
+        {/* Carousel Container */}
         <div className="relative">
-          {/* Left Button */}
+          {/* Left Scroll Button */}
           <Button
             variant="outline"
             size="icon"
@@ -153,7 +151,7 @@ export function TeamSection() {
             <ChevronLeft className="h-6 w-6" />
           </Button>
 
-          {/* Scroll Container */}
+          {/* Scrollable Cards */}
           <div
             ref={scrollRef}
             className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-6 pb-4 scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-muted"
@@ -163,68 +161,67 @@ export function TeamSection() {
               return (
                 <Card
                   key={index}
-                  className="flex-shrink-0 w-[340px] sm:w-[380px] lg:w-[400px] h-[720px] flex flex-col justify-between border-border overflow-hidden rounded-2xl shadow-md bg-background snap-center"
+                  className="flex-shrink-0 w-[340px] sm:w-[380px] lg:w-[400px] h-[780px] flex flex-col border-border overflow-hidden rounded-2xl shadow-md bg-background snap-center group"
                 >
-                  {/* Image */}
-                  <div className="w-full h-64 overflow-hidden">
+                  {/* Executive Image */}
+                  <div className="relative w-full h-64 overflow-hidden group">
                     <img
                       src={exec.image || "/placeholder.svg"}
                       alt={exec.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-700 ease-out" />
                   </div>
 
-                  {/* Content */}
-                  <CardContent className="flex flex-col flex-1 p-6 justify-between space-y-3">
-                    <div className="flex flex-col flex-1 justify-between space-y-3">
-                      {/* Header */}
-                      <header className="text-center space-y-1">
-                        <h3 className="text-xl font-semibold">{exec.name}</h3>
-                        <p className="text-primary font-medium leading-snug">
-                          {exec.role}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {statuses.map((status, i) => {
-                            let element
-                            if (status === "Founder")
-                              element = <span key={status} className="font-semibold">Founder</span>
-                            else if (status === "Owner")
-                              element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
-                            else if (status === "Director")
-                              element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
-                            else if (status === "Non-Director")
-                              element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
-
-                            return (
-                              <span key={i} className="inline-flex items-center">
-                                {element}
-                                {i < statuses.length - 1 && (
-                                  <span className="not-italic mx-1 text-muted-foreground">|</span>
-                                )}
-                              </span>
-                            )
-                          })}
-                        </p>
-                      </header>
-
-                      {/* Bio */}
-                      <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                        {exec.bio}
+                  {/* Card Content */}
+                  <CardContent className="flex flex-col justify-between flex-1 p-6 space-y-3">
+                    {/* Header */}
+                    <header className="text-center space-y-1">
+                      <h3 className="text-xl font-semibold">{exec.name}</h3>
+                      <p className="text-primary font-medium leading-snug">
+                        {exec.role}
                       </p>
+                      <p className="text-sm text-muted-foreground">
+                        {statuses.map((status, i) => {
+                          let element
+                          if (status === "Founder")
+                            element = <span key={status} className="font-semibold">Founder</span>
+                          else if (status === "Owner")
+                            element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
+                          else if (status === "Director")
+                            element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
+                          else if (status === "Non-Director")
+                            element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
 
-                      {/* Vision */}
-                      <div className="bg-muted p-3 rounded-lg min-h-[100px] flex items-center justify-center">
-                        <p className="text-sm italic text-center text-muted-foreground">"{exec.vision}"</p>
-                      </div>
+                          return (
+                            <span key={i} className="inline-flex items-center">
+                              {element}
+                              {i < statuses.length - 1 && (
+                                <span className="not-italic mx-1 text-muted-foreground">|</span>
+                              )}
+                            </span>
+                          )
+                        })}
+                      </p>
+                    </header>
+
+                    {/* Bio */}
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                      {exec.bio}
+                    </p>
+
+                    {/* Vision */}
+                    <div className="bg-muted p-3 rounded-lg min-h-[100px] flex items-center justify-center">
+                      <p className="text-sm italic text-center text-muted-foreground">"{exec.vision}"</p>
                     </div>
 
                     {/* Skills */}
-                    <div className="flex flex-wrap gap-2">
-                      {exec.skills.map((skill, skillIndex) => (
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {exec.skills.map((skill, i) => (
                         <Badge
-                          key={skillIndex}
+                          key={i}
                           variant="secondary"
-                          className="text-xs transition-colors duration-200 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                          className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                         >
                           {skill}
                         </Badge>
@@ -233,10 +230,10 @@ export function TeamSection() {
 
                     {/* Socials */}
                     <div className="flex justify-center space-x-2 pt-2">
-                      <Button variant="ghost" size="sm" aria-label={`${exec.name} LinkedIn`}>
+                      <Button variant="ghost" size="sm">
                         <Linkedin className="h-4 w-4" />
                       </Button>
-                      <Button variant="ghost" size="sm" aria-label={`${exec.name} Email`}>
+                      <Button variant="ghost" size="sm">
                         <Mail className="h-4 w-4" />
                       </Button>
                     </div>
@@ -246,7 +243,7 @@ export function TeamSection() {
             })}
           </div>
 
-          {/* Right Button */}
+          {/* Right Scroll Button */}
           <Button
             variant="outline"
             size="icon"
