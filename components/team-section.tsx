@@ -1,6 +1,9 @@
+"use client"
+
+import { useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const executives = [
@@ -53,8 +56,7 @@ const executives = [
     bio: "Finance and compliance professional with broad experience in governance, audit and regulatory affairs. Oversees financial planning, resource optimization and compliance with statutory and industry standards, ensuring Omni-Legacy remains financially sound and operationally accountable.",
     vision:
       "To build a strong financial and compliance framework that supports innovation, transparency and sustainable growth at Omni-Legacy Co. Ltd.",
-    image: "/CTO - Knoph Ayieko.png",
-    // /moses-kimutai-cfco.png
+    image: "/moses-kimutai-cfco.png",
     skills: [
       "Financial Strategy & Planning",
       "Corporate Governance",
@@ -96,8 +98,7 @@ const executives = [
     bio: "Strategy and innovation expert focused on future-proofing the company through research, market insights and growth initiatives. Drives Omni-Legacy’s innovation agenda, aligning technological advancement with long-term strategic priorities and client impact.",
     vision:
       "To drive innovation and strategic foresight that strengthen Omni-Legacy’s position as a leader in technology and sustainable business growth.",
-    image: "/maryann-agau-cppo.png",
-    // /gaudencia-nyarangi-csio.png
+    image: "/gaudencia-nyarangi-csio.png",
     skills: [
       "Strategic Planning",
       "Innovation Management",
