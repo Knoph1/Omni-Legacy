@@ -56,7 +56,8 @@ const executives = [
     bio: "Finance and compliance professional with broad experience in governance, audit and regulatory affairs. Oversees financial planning, resource optimization and compliance with statutory and industry standards, ensuring Omni-Legacy remains financially sound and operationally accountable.",
     vision:
       "To build a strong financial and compliance framework that supports innovation, transparency and sustainable growth at Omni-Legacy Co. Ltd.",
-    image: "/moses-kimutai-cfco.png",
+    image: "/CTO - Knoph Ayieko.png",
+    // /moses-kimutai-cfco.png
     skills: [
       "Financial Strategy & Planning",
       "Corporate Governance",
@@ -98,7 +99,8 @@ const executives = [
     bio: "Strategy and innovation expert focused on future-proofing the company through research, market insights and growth initiatives. Drives Omni-Legacy’s innovation agenda, aligning technological advancement with long-term strategic priorities and client impact.",
     vision:
       "To drive innovation and strategic foresight that strengthen Omni-Legacy’s position as a leader in technology and sustainable business growth.",
-    image: "/gaudencia-nyarangi-csio.png",
+    image: "/maryann-agau-cppo.png",
+    // /gaudencia-nyarangi-csio.png
     skills: [
       "Strategic Planning",
       "Innovation Management",
@@ -120,7 +122,8 @@ export function TeamSection() {
   const scroll = (direction) => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current
-      const scrollAmount = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
+      const scrollAmount =
+        direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
       scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" })
     }
   }
@@ -140,7 +143,7 @@ export function TeamSection() {
 
         {/* Scrollable Executive Cards */}
         <div className="relative">
-          {/* Scroll Buttons */}
+          {/* Left Button */}
           <Button
             variant="outline"
             size="icon"
@@ -150,6 +153,7 @@ export function TeamSection() {
             <ChevronLeft className="h-6 w-6" />
           </Button>
 
+          {/* Scroll Container */}
           <div
             ref={scrollRef}
             className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-6 pb-4 scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-muted"
@@ -159,49 +163,59 @@ export function TeamSection() {
               return (
                 <Card
                   key={index}
-                  className="flex-shrink-0 w-[340px] sm:w-[380px] lg:w-[420px] border-border overflow-hidden rounded-2xl shadow-md snap-center bg-background"
+                  className="flex-shrink-0 w-[340px] sm:w-[380px] lg:w-[400px] h-[720px] flex flex-col justify-between border-border overflow-hidden rounded-2xl shadow-md bg-background snap-center"
                 >
-                  <img
-                    src={exec.image || "/placeholder.svg"}
-                    alt={exec.name}
-                    className="w-full h-64 object-contain bg-muted rounded-t-2xl"
-                  />
+                  {/* Image */}
+                  <div className="w-full h-64 overflow-hidden">
+                    <img
+                      src={exec.image || "/placeholder.svg"}
+                      alt={exec.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                  <CardContent className="flex flex-col p-6 space-y-3">
-                    {/* Header */}
-                    <header className="text-center">
-                      <h3 className="text-xl font-semibold">{exec.name}</h3>
-                      <p className="text-primary font-medium">{exec.role}</p>
-                      <p className="text-sm mt-2 text-muted-foreground">
-                        {statuses.map((status, i) => {
-                          let element
-                          if (status === "Founder")
-                            element = <span key={status} className="font-semibold">Founder</span>
-                          else if (status === "Owner")
-                            element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
-                          else if (status === "Director")
-                            element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
-                          else if (status === "Non-Director")
-                            element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
+                  {/* Content */}
+                  <CardContent className="flex flex-col flex-1 p-6 justify-between space-y-3">
+                    <div className="flex flex-col flex-1 justify-between space-y-3">
+                      {/* Header */}
+                      <header className="text-center space-y-1">
+                        <h3 className="text-xl font-semibold">{exec.name}</h3>
+                        <p className="text-primary font-medium leading-snug">
+                          {exec.role}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {statuses.map((status, i) => {
+                            let element
+                            if (status === "Founder")
+                              element = <span key={status} className="font-semibold">Founder</span>
+                            else if (status === "Owner")
+                              element = <span key={status} className="italic font-normal text-muted-foreground">Owner</span>
+                            else if (status === "Director")
+                              element = <span key={status} className="font-bold not-italic text-foreground">Director</span>
+                            else if (status === "Non-Director")
+                              element = <span key={status} className="italic font-normal text-muted-foreground">Non-Director</span>
 
-                          return (
-                            <span key={i} className="inline-flex items-center">
-                              {element}
-                              {i < statuses.length - 1 && (
-                                <span className="not-italic mx-1 text-muted-foreground">|</span>
-                              )}
-                            </span>
-                          )
-                        })}
+                            return (
+                              <span key={i} className="inline-flex items-center">
+                                {element}
+                                {i < statuses.length - 1 && (
+                                  <span className="not-italic mx-1 text-muted-foreground">|</span>
+                                )}
+                              </span>
+                            )
+                          })}
+                        </p>
+                      </header>
+
+                      {/* Bio */}
+                      <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                        {exec.bio}
                       </p>
-                    </header>
 
-                    {/* Bio */}
-                    <p className="text-sm text-muted-foreground leading-relaxed">{exec.bio}</p>
-
-                    {/* Vision */}
-                    <div className="bg-muted p-3 rounded-lg min-h-[100px] flex items-center justify-center">
-                      <p className="text-sm italic text-center text-muted-foreground">"{exec.vision}"</p>
+                      {/* Vision */}
+                      <div className="bg-muted p-3 rounded-lg min-h-[100px] flex items-center justify-center">
+                        <p className="text-sm italic text-center text-muted-foreground">"{exec.vision}"</p>
+                      </div>
                     </div>
 
                     {/* Skills */}
@@ -232,6 +246,7 @@ export function TeamSection() {
             })}
           </div>
 
+          {/* Right Button */}
           <Button
             variant="outline"
             size="icon"
