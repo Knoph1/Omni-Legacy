@@ -158,11 +158,15 @@ export function TeamSection() {
                             )
                           }
 
-                          // Add separators between statuses
+                          // Add separators (not italic) between statuses
                           return (
-                            <span key={i}>
+                            <span key={i} className="flex items-center">
                               {element}
-                              {i < statuses.length - 1 && " | "}
+                              {i < statuses.length - 1 && (
+                                <span className="not-italic mx-1 text-muted-foreground">
+                                  |
+                                </span>
+                              )}
                             </span>
                           )
                         })}
