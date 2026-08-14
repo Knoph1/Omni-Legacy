@@ -1,8 +1,7 @@
-# Omni-Legacy  
+# Omni-Legacy Limited  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
-## Omni-Legacy Limited
-> O.L Ltd - *Tech Company Website*  
+> *Tech Company Website*  
 
 ## Table of Contents
 1. [Overview](#overview)
