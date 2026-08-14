@@ -25,8 +25,8 @@ export function CompanyOverview() {
               <Card className="border-border">
                 <CardContent className="p-4 text-center">
                   <Building2 className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <p className="font-semibold">Established: <className="text-sm text-muted-foreground">2022</p>
-                  <p className="font-semibold">Officially Registered: <className="text-sm text-muted-foreground">2026</p>
+                  <p className="font-semibold">Established <className="text-sm text-muted-foreground">2022</p>
+                  <p className="font-semibold">Officially Registered <className="text-sm text-muted-foreground">2026</p>
                 </CardContent>
               </Card>
               <Card className="border-border">
@@ -40,14 +40,14 @@ export function CompanyOverview() {
                 <CardContent className="p-4 text-center">
                   <Award className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Compliance</p>
-                  <p className="text-sm text-muted-foreground">Tech accredited | AGPO Ready</p>
+                  <p className="text-sm text-muted-foreground">Fully</p>
                 </CardContent>
               </Card>
               <Card className="border-border">
                 <CardContent className="p-4 text-center">
                   <Users className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Banking</p>
-                  <p className="text-sm text-muted-foreground">Traditionally & Digitally</p>
+                  <p className="text-sm text-muted-foreground">Checked</p>
                 </CardContent>
               </Card>
             </div>
