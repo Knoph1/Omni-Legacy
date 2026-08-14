@@ -148,15 +148,19 @@ export function ContactInfo() {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="font-medium">Banking:</span>
-                    <span>Equity Bank</span>
+                    <span>Checked</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="font-medium">Authorized Signatories:</span>
-                    <span>CEO & CTO</span>
+                    <span className="font-medium">Accountabilty:</span>
+                    <span>Checked</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="font-medium">Reliability:</span>
+                    <span>Checked</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-medium">Compliance:</span>
-                    <span>AGPO Ready</span>
+                    <span>Checked</span>
                   </div>
                   <div className="pt-2 text-muted-foreground">
                     <span>Fully compliant for government and NGO tenders</span>
