@@ -18,7 +18,7 @@ const offices = [
     address: "Nyali, Mombasa, Kenya",
     phone: "+254 790 065 272",
     email: "mbs@omni-legacy.tech",
-    hours: "Mon-Fri: 9:00 AM - 6:00 PM EAT",
+    hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8199!2d39.7000!3d-4.0435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDInMzYuNiJTIDM5wrA0MicwMC4wIkU!5e0!3m2!1sen!2ske!4v1234567890",
   },
@@ -27,7 +27,7 @@ const offices = [
     address: "Eldoret Town, Uasin Gishu, Kenya",
     phone: "+254 790 558 958",
     email: "eld@omni-legacy.tech",
-    hours: "Mon-Fri: 9:00 AM - 6:00 PM EAT",
+    hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7599!2d35.2697!3d0.5143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzAnNTEuNSJOIDM1wrAxNicxMC45IkU!5e0!3m2!1sen!2ske!4v1234567890",
   },
