@@ -9,7 +9,7 @@ export function ContactHero() {
             Let's Build the Future of <span className="text-primary">Technology Together</span>
           </h1>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-            Get in touch with Omni-Legacy Ltd. for software development, IT consultancy, digital transformation, and
+            Get in touch with Omni-Legacy Limited for software development, IT consultancy, digital transformation and
             technical support across Kenya and East Africa.
           </p>
 
