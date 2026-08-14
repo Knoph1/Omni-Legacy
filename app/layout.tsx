@@ -13,14 +13,14 @@ import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Omni-Legacy Co. Ltd. | Leading IT Solutions & Software Development in Kenya",
+  title: "Omni-Legacy Limited | Leading IT Solutions & Software Development in Kenya",
   description:
-    "Omni-Legacy Company Limited (O.L Co. Ltd.) - Premier Kenyan IT company specializing in custom software development, IT consultancy, digital transformation, cybersecurity and cloud solutions across Kenya and East Africa. AGPO certified.",
+    "Omni-Legacy Limited (O.L Ltd) - Premier Kenyan IT company specializing in custom software development, IT consultancy, digital transformation, cybersecurity and cloud solutions across Kenya and East Africa. AGPO certified.",
   keywords: [
     "IT solutions Kenya",
     "software development Kenya",
-    "Omni-Legacy Company Limited",
-    "O.L Co. Ltd",
+    "Omni-Legacy Limited",
+    "O.L Ltd",
     "IT consultancy Kenya",
     "digital transformation Kenya",
     "cybersecurity Kenya",
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     "East Africa IT services",
   ].join(", "),
   authors: [{ name: "Omni-Legacy Limited" }],
-  creator: "Omni-Legacy Company Limited",
-  publisher: "Omni-Legacy Company Limited",
-  generator: "Omni-Legacy Co. Ltd.",
-  applicationName: "Omni-Legacy Co. Ltd. Website",
+  creator: "Omni-Legacy Limited",
+  publisher: "Omni-Legacy Limited",
+  generator: "Omni-Legacy Limited",
+  applicationName: "Omni-Legacy Limited - Website",
   referrer: "origin-when-cross-origin",
   colorScheme: "light dark",
   themeColor: [
@@ -70,8 +70,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_KE",
     url: "https://omni-legacy.tech",
-    siteName: "Omni-Legacy Co. Ltd.",
-    title: "Omni-Legacy Co. Ltd. | Leading IT Solutions & Software Development in Kenya",
+    siteName: "Omni-Legacy Limited",
+    title: "Omni-Legacy Limited | Leading IT Solutions & Software Development in Kenya",
     description:
       "Premier Kenyan IT company specializing in custom software development, IT consultancy, digital transformation and cybersecurity services.",
     images: [
@@ -79,13 +79,13 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Omni-Legacy Company Limited - IT Solutions Kenya",
+        alt: "Omni-Legacy Limited - IT Solutions Kenya",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Omni-Legacy Co. Ltd. | Leading IT Solutions Kenya",
+    title: "Omni-Legacy Limited | Leading IT Solutions Kenya",
     description: "Premier Kenyan IT company specializing in custom software development and IT consultancy services.",
     images: ["/logo.png"],
   },
