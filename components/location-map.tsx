@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 const offices = [
   {
-    name: "Nairobi Headquarters",
+    name: "Nairobi Head Office",
     address: "Kenyatta Avenue, Nairobi, Kenya",
     phone: "+254 7990 065 271",
     email: "nrb@omni-legacy.tech",
