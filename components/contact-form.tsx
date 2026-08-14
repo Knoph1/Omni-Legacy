@@ -229,7 +229,7 @@ export function ContactForm() {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
-                  placeholder="Tell us about your project goals, technical requirements, and any specific challenges you're facing..."
+                  placeholder="Tell us about your project goals, technical requirements and any specific challenges you're facing..."
                 />
               </div>
 
