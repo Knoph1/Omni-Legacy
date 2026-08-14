@@ -13,7 +13,7 @@ const executives = [
     status: "Director | Owner",
     bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance, finance, and business growth.",
     vision:
-      "To position Omni-Legacy Co. Ltd. as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and transformative partnerships across Africa.",
+      "To position Omni-Legacy Limited as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and transformative partnerships across Africa.",
     image: "/ceo-mary-muraguri.png",
     skills: ["Leadership", "Corporate Governance", "Strategic Vision"],
   },
