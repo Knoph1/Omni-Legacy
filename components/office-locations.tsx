@@ -4,19 +4,25 @@ import { MapPin, Phone, Clock } from "lucide-react"
 const offices = [
   {
     name: "Nairobi Head Office",
-    address: "Nairobi, Kenya",
+    address: "Pioneer House, Kenyatta Avenue, Nairobi, Kenya",
     description: "Head office (H/O) and technical operations center",
+    phone: "+254 790 065 271",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM, Sat: 9:00 AM - 2:00 PM EAT",
     isHQ: true,
   },
   {
     name: "Mombasa Office",
     address: "Mombasa, Kenya",
     description: "Coastal region operations and client services",
+    phone: "+254 700 000 000", // Update with your actual Mombasa branch number
+    hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
   },
   {
     name: "Eldoret Office",
     address: "Eldoret, Kenya",
     description: "Rift Region & Western Kenya operations and support",
+    phone: "+254 711 000 000", // Update with your actual Eldoret branch number
+    hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
   },
 ]
 
@@ -52,12 +58,14 @@ export function OfficeLocations() {
 
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-primary" />
-                    <span>+254 790 065 271</span>
+                    <Phone className="h-4 w-4 text-primary shrink-0" />
+                    <a href={`tel:${office.phone}`} className="hover:underline">
+                      {office.phone}
+                    </a>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <span>Mon-Fri: 9:00 AM - 4:00 PM EAT</span>
+                    <Clock className="h-4 w-4 text-primary shrink-0" />
+                    <span>{office.hours}</span>
                   </div>
                 </div>
 
