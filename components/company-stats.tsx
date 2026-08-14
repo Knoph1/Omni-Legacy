@@ -3,7 +3,7 @@ export function CompanyStats() {
     { number: "21", label: "Projects Completed" },
     { number: "100+", label: "Happy Clients" },
     { number: "6+", label: "Team Members" },
-    { number: "4+", label: "Years of Excellence" },
+    { number: "4", label: "Years of Excellence" },
   ]
 
   return (
