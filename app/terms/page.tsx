@@ -13,7 +13,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using the services provided by Omni-Legacy Limited ("O.L Ltd", "we", "us" or "our"),
+                By accessing and using the services provided by <strong>Omni-Legacy Limited</strong> (<strong>"O.L Ltd"</strong>, "we", "us" or "our"),
                 you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to
                 abide by the above, please do not use this service.
               </p>
@@ -53,7 +53,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                O.L Ltd shall not be liable for any indirect, incidental, special, consequential or punitive damages,
+                Omni-Legacy Limited shall not be liable for any indirect, incidental, special, consequential or punitive damages,
                 including without limitation, loss of profits, data, use, goodwill or other intangible losses,
                 resulting from your use of our services.
               </p>
