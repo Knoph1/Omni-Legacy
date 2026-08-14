@@ -5,7 +5,7 @@ const offices = [
   {
     name: "Nairobi Headquarters",
     address: "Nairobi, Kenya",
-    description: "Main office and technical operations center",
+    description: "Head office (H/O) and technical operations center",
     isHQ: true,
   },
   {
@@ -57,7 +57,7 @@ export function OfficeLocations() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-primary" />
-                    <span>Mon-Fri: 8:00 AM - 5:00 PM EAT</span>
+                    <span>Mon-Fri: 9:00 AM - 4:00 PM EAT</span>
                   </div>
                 </div>
 
