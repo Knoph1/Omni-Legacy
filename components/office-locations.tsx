@@ -14,14 +14,14 @@ const offices = [
     name: "Mombasa Office",
     address: "Nyali - Mombasa City, Kenya",
     description: "Coastal region operations and client services",
-    phone: "+254 700 000 000", // Update with your actual Mombasa branch number
+    phone: "+254 790 065 272", // Update with your actual Mombasa branch number
     hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
   },
   {
     name: "Eldoret Office",
     address: "Kapseret - Eldoret City, Kenya",
     description: "Rift Region & Western Kenya operations and support",
-    phone: "+254 711 000 000", // Update with your actual Eldoret branch number
+    phone: "+254 790 558 958", // Update with your actual Eldoret branch number
     hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
   },
 ]
