@@ -81,7 +81,7 @@ export function HeroSection() {
               Kenyan Owned
             </div>
             <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 bg-primary text-primary-foreground px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-semibold shadow-lg text-sm sm:text-base">
-              Tech-Led
+              Woman-Led
             </div>
           </div>
         </div>
