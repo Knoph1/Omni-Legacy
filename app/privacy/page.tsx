@@ -13,7 +13,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Omni-Legacy Limited ("O.L Ltd") collects information you provide directly to us, such as when you
+                <strong>Omni-Legacy Limited</strong> collects information you provide directly to us, such as when you
                 create an account, request services or contact us. This may include:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
