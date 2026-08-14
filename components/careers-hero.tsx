@@ -11,7 +11,7 @@ export function CareersHero() {
             Join Our Mission to <span className="text-primary">Transform Kenya's</span> Digital Future
           </h1>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-            Be part of Omni-Legacy Ltd.'s growing team of innovators, developers, and technology experts. Help us build
+            Be part of Omni-Legacy Limited's growing team of innovators, developers, and technology experts. Help us build
             cutting-edge solutions that empower businesses across Kenya and East Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
