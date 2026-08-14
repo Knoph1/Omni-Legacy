@@ -15,7 +15,7 @@ export function HeroSection() {
                 Transforming Ideas Into <span className="text-primary">Innovative Technology Solutions</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground text-pretty leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Omni-Legacy Company Limited (O.L Co. Ltd.) delivers cutting-edge software, IT services and digital transformation
+                Omni-Legacy Limited delivers cutting-edge software, IT services and digital transformation
                 solutions across Kenya and East Africa — from Nairobi to Mombasa and Eldoret.
               </p>
             </div>
@@ -81,7 +81,7 @@ export function HeroSection() {
               Kenyan Owned
             </div>
             <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 bg-primary text-primary-foreground px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-semibold shadow-lg text-sm sm:text-base">
-              Woman-Led
+              Tech-Led
             </div>
           </div>
         </div>
