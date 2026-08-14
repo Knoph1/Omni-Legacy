@@ -13,7 +13,7 @@ const executives = [
     status: "Director | Owner",
     bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance, finance and business growth. Provides overall direction for Omni-Legacy Co. Ltd., steering company strategy, compliance, partnerships and sustainable expansion within Kenya’s public and private sectors.",
     vision:
-      "To position Omni-Legacy Co. Ltd. as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and transformative partnerships across Africa.",
+      "To position Omni-Legacy Limited as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and transformative partnerships across Africa.",
     image: "/professional-woman-ceo.png",
     skills: [
       "Business Development",
@@ -55,7 +55,7 @@ const executives = [
     status: "Director",
     bio: "Finance and compliance professional with broad experience in governance, audit and regulatory affairs. Oversees financial planning, resource optimization and compliance with statutory and industry standards, ensuring Omni-Legacy remains financially sound and operationally accountable.",
     vision:
-      "To build a strong financial and compliance framework that supports innovation, transparency and sustainable growth at Omni-Legacy Co. Ltd.",
+      "To build a strong financial and compliance framework that supports innovation, transparency and sustainable growth at Omni-Legacy Limited",
     image: "/moses-kimutai-cfco.png",
     skills: [
       "Financial Strategy & Planning",
@@ -135,7 +135,7 @@ export function TeamSection() {
             Meet Our <span className="text-primary">Executive Team</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our leadership combines strategic vision, technical innovation and operational excellence to drive Omni-Legacy Co. Ltd. forward as a woman-led technology company in Kenya.
+            Our leadership combines strategic vision, technical innovation and operational excellence to drive Omni-Legacy Limited forward as a woman-led technology company in Kenya.
           </p>
         </div>
 
