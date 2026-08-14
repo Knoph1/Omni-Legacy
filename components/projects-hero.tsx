@@ -11,7 +11,7 @@ export function ProjectsHero() {
             Delivering Innovative <span className="text-primary">IT Solutions</span> Across Kenya & Beyond
           </h1>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-            From government systems to enterprise software, O.L Co. Ltd. builds technology solutions that drive efficiency,
+            From government systems to enterprise software, Omni-Legacy Limited builds technology solutions that drive efficiency,
             security and growth for our clients across Kenya and East Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
