@@ -11,7 +11,7 @@ const executives = [
     name: "Mary M. Muraguri",
     role: "Chief Executive Officer (CEO) & Managing Director (MD)",
     status: "Director | Owner",
-    bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance, finance and business growth. Provides overall direction for Omni-Legacy Co. Ltd., steering company strategy, compliance, partnerships and sustainable expansion within Kenya’s public and private sectors.",
+    bio: "Visionary leader and strategic business executive with expertise in corporate leadership, governance, finance and business growth. Provides overall direction for Omni-Legacy Limited, steering company strategy, compliance, partnerships and sustainable expansion within Kenya’s public and private sectors.",
     vision:
       "To position Omni-Legacy Limited as a trusted Kenyan, woman-led technology company delivering sustainable IT solutions and transformative partnerships across Africa.",
     image: "/professional-woman-ceo.png",
