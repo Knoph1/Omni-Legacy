@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Learn about Omni-Legacy Limited (O.L Ltd), a woman-led Kenyan IT company founded by CEO Mary M. Muraguri and CTO Knoph O. Ayieko. Discover our mission, values and expertise in software development and IT consultancy across Kenya and East Africa.",
   keywords: [
-    "Omni-Legacy Company Limited about",
+    "Omni-Legacy Limited about",
     "Mary M. Muraguri CEO",
     "Knoph O. Ayieko CTO",
     "woman-led IT company Kenya",
