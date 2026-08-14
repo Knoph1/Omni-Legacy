@@ -10,7 +10,7 @@ const featuredProjects = [
     year: "2024–2025",
     category: "HealthIT Project",
     description:
-      "Comprehensive digital health systems for health data management, automated reporting, and patient record integration across Kenya's health infrastructure.",
+      "Comprehensive digital health systems for health data management, automated reporting and patient record integration across Kenya's health infrastructure.",
     techStack: ["Python (Flask)", "PostgreSQL", "MySQL", "React.js"],
     scope: [
       "Developed digital health systems for health data management",
@@ -89,7 +89,7 @@ export function FeaturedProjects() {
           </h2>
           <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
             Our portfolio reflects our expertise across software development, IT systems integration, digital
-            transformation, and technical support. Every project is tailored to meet unique client needs.
+            transformation and technical support. Every project is tailored to meet unique client needs.
           </p>
         </div>
 
