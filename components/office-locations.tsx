@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock } from "lucide-react"
 
 const offices = [
   {
-    name: "Nairobi Headquarters",
+    name: "Nairobi Head Office",
     address: "Nairobi, Kenya",
     description: "Head office (H/O) and technical operations center",
     isHQ: true,
