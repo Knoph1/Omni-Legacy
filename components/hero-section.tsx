@@ -50,8 +50,8 @@ export function HeroSection() {
                 <div className="text-xs sm:text-sm text-muted-foreground">Regional Offices</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl sm:text-3xl font-bold text-primary" aria-label="99% tender ready">
-                  100%
+                <div className="text-2xl sm:text-3xl font-bold text-primary" aria-label="100% tender ready">
+                  99%
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Tender Ready</div>
               </div>
