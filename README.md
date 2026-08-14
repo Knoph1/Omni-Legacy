@@ -1,8 +1,8 @@
 # Omni-Legacy  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
-## Omni-Legacy Co. Ltd.
-> O.L Co. Ltd. - *Tech Company Website*  
+## Omni-Legacy Limited
+> O.L Ltd - *Tech Company Website*  
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -19,8 +19,8 @@
 ---
 
 ## Overview
-**Omni-Legacy Company Limited (O.L Co. Ltd.)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation and project delivery services**.  
-This repository contains the **official website** for O.L Ltd., showcasing our **portfolio, services, projects and contact information** for clients, partners and tenders.
+**Omni-Legacy Limited (O.L Ltd)** is a Kenyan IT and software development company providing **innovative technology solutions, IT consultancy, digital transformation and project delivery services**.  
+This repository contains the **official website** for O.L Ltd, showcasing our **portfolio, services, projects and contact information** for clients, partners and tenders.
 
 **Website:** [www.omni-legacy.tech](https://omni-legacy.vercel.app/)  
 **Email:** [info@omni-legacy.tech](mailto:info@omni-legacy.tech)  
@@ -143,7 +143,7 @@ We welcome contributions to enhance the website!
 
 ## License  
 *Developed with care by **Knoph O. Ayieko***  
-> This project is **proprietary software** and is the exclusive property of **Omni-Legacy Co. Ltd.**  
+> This project is **proprietary software** and is the exclusive property of **Omni-Legacy Limited**  
 Unauthorized use, distribution or modification of this code is strictly prohibited.
 
-© 2026 Omni-Legacy Co. Ltd | All Rights Reserved.
+© 2026 Omni-Legacy Limited | All Rights Reserved.
