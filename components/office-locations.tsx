@@ -3,8 +3,8 @@ import { MapPin, Phone, Clock } from "lucide-react"
 
 const offices = [
   {
-    name: "Nairobi Head Office",
-    address: "Pioneer House, Kenyatta Avenue, Nairobi, Kenya",
+    name: "Nairobi - Head Office",
+    address: "Kenyatta Avenue - Nairobi City , Kenya",
     description: "Head office (H/O) and technical operations center",
     phone: "+254 790 065 271",
     hours: "Mon-Fri: 8:00 AM - 5:00 PM, Sat: 9:00 AM - 2:00 PM EAT",
@@ -12,14 +12,14 @@ const offices = [
   },
   {
     name: "Mombasa Office",
-    address: "Mombasa, Kenya",
+    address: "Nyali - Mombasa City, Kenya",
     description: "Coastal region operations and client services",
     phone: "+254 700 000 000", // Update with your actual Mombasa branch number
     hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
   },
   {
     name: "Eldoret Office",
-    address: "Eldoret, Kenya",
+    address: "Kapseret - Eldoret City, Kenya",
     description: "Rift Region & Western Kenya operations and support",
     phone: "+254 711 000 000", // Update with your actual Eldoret branch number
     hours: "Mon-Fri: 9:00 AM - 4:00 PM EAT", // Updated regional hours
