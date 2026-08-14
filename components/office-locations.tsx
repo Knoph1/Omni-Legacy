@@ -53,7 +53,7 @@ export function OfficeLocations() {
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4 text-primary" />
-                    <span>+254 790 558 956</span>
+                    <span>+254 790 065 271</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-primary" />
