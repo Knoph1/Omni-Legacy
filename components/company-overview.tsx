@@ -26,7 +26,7 @@ export function CompanyOverview() {
                 <CardContent className="p-4 text-center">
                   <Building2 className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Established</p>
-                  <p className="text-sm text-muted-foreground">2020</p>
+                  <p className="text-sm text-muted-foreground">2022</p>
                   <p className="font-semibold">Officially RegisteredEstablished</p>
                   <p className="text-sm text-muted-foreground">2026</p>
                 </CardContent>
