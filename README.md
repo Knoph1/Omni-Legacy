@@ -1,7 +1,7 @@
-# Omni-Legacy Limited  
+# Omni-Legacy  
 <img src="public/logo.png" alt="O.L Ltd. Logo" width="120"/>
 
-> *Tech Company Website*  
+> Omni-Legacy Limited - *Kenyan Tech Company*  
 
 ## Table of Contents
 1. [Overview](#overview)
