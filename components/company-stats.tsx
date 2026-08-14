@@ -1,9 +1,9 @@
 export function CompanyStats() {
   const stats = [
-    { number: "150+", label: "Projects Completed" },
-    { number: "100+", label: "Happy Clients" },
-    { number: "20+", label: "Team Members" },
-    { number: "5", label: "Years of Excellence" },
+    { number: "25+", label: "Projects Completed" },
+    { number: "50+", label: "Happy Clients" },
+    { number: "6+", label: "Team Members" },
+    { number: "3+", label: "Years of Excellence" },
   ]
 
   return (
