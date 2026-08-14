@@ -28,7 +28,7 @@ export function Footer() {
               Omni-Legacy Limited
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              A woman-led, <strong>Kenyan Tech Company</strong> delivering cutting-edge software, IT services and digital transformation
+              A <strong>Kenyan Tech Company</strong> delivering cutting-edge software, IT services and digital transformation
               solutions across Kenya and East Africa.
             </p>
             <div className="flex space-x-4">
