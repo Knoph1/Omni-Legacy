@@ -57,7 +57,7 @@ export function ContactInfo() {
                   <div className="flex items-center gap-2">
                     <span className="font-medium">Main Line:</span>
                     <a href="tel:+254790558956" className="text-primary hover:underline">
-                      +254 790 558 956
+                      +254 790 065 271
                     </a>
                   </div>
                 </div>
