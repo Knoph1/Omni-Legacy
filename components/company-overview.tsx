@@ -9,10 +9,10 @@ export function CompanyOverview() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-balance">
-                About <span className="text-primary">Omni-Legacy Co. Ltd.</span>
+                About <span className="text-primary">Omni-Legacy Limited</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Established in 2020 with headquarters in Nairobi and branches in Mombasa & Eldoret, Omni-Legacy Co. Ltd. was
+                Established in 2020 with headquarters in Nairobi and branches in Mombasa & Eldoret, <strong>Omni-Legacy Limited</strong> was
                 founded to provide end-to-end IT solutions that drive business efficiency, innovation and growth.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
