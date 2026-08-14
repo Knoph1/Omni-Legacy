@@ -13,7 +13,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Omni-Legacy Company Limited ("O.L Co. Ltd.") collects information you provide directly to us, such as when you
+                Omni-Legacy Limited ("O.L Ltd") collects information you provide directly to us, such as when you
                 create an account, request services or contact us. This may include:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
@@ -87,9 +87,9 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="bg-muted p-4 rounded-lg mt-4">
-                <p className="text-foreground font-medium">Omni-Legacy Company Limited</p>
+                <p className="text-foreground font-medium">Omni-Legacy Limited</p>
                 <p className="text-muted-foreground">Email: info@omni-legacy.tech</p>
-                <p className="text-muted-foreground">Phone: +254 790 558 956</p>
+                <p className="text-muted-foreground">Phone: +254 790 065 271</p>
                 <p className="text-muted-foreground">Address: Nairobi, Kenya</p>
               </div>
             </section>
