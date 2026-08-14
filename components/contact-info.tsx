@@ -10,7 +10,7 @@ export function ContactInfo() {
           <div>
             <h2 className="text-3xl font-bold mb-4">Reach Us Directly</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Connect with Omni-Legacy Ltd. through multiple channels. We're here to discuss your technology needs and
+              Connect with Omni-Legacy Limited through multiple channels. We're here to discuss your technology needs and
               provide expert guidance for your projects.
             </p>
           </div>
