@@ -56,7 +56,7 @@ export function ContactInfo() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="font-medium">Main Line:</span>
-                    <a href="tel:+254790558956" className="text-primary hover:underline">
+                    <a href="tel:+254790065271" className="text-primary hover:underline">
                       +254 790 065 271
                     </a>
                   </div>
@@ -94,7 +94,7 @@ export function ContactInfo() {
                   <div>
                     <p className="font-medium flex items-center gap-2">
                       <Building2 className="h-4 w-4" />
-                      Headquarters - Nairobi
+                      Head Office - Nairobi
                     </p>
                     <p className="text-muted-foreground text-sm ml-6">Nairobi, Kenya</p>
                   </div>
@@ -120,11 +120,11 @@ export function ContactInfo() {
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
                     <span>Monday - Friday:</span>
-                    <span>8:00 AM - 6:00 PM EAT</span>
+                    <span>8:00 AM - 5:00 PM EAT</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Saturday:</span>
-                    <span>9:00 AM - 1:00 PM EAT</span>
+                    <span>9:00 AM - 2:00 PM EAT</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday:</span>
