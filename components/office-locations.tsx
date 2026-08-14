@@ -47,7 +47,7 @@ export function OfficeLocations() {
                 <CardTitle className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
                   {office.name}
-                  {office.isHQ && <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">HQ</span>}
+                  {office.isHQ && <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">H/O</span>}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
