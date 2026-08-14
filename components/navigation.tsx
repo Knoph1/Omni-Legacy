@@ -44,17 +44,17 @@ export function Navigation() {
             <Link
               href="/"
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md"
-              aria-label="Omni-Legacy Co. Ltd. - Go to homepage"
+              aria-label="Omni-Legacy Limited - Go to homepage"
             >
               <Image
                 src="/logo.png"
-                alt="Omni-Legacy Co. Ltd. Logo"
+                alt="Omni-Legacy Limited _ logo"
                 width={40}
                 height={40}
                 className="w-10 h-10"
                 priority
               />
-              <span className="text-xl font-bold text-foreground">Omni-Legacy Co. Ltd.</span>
+              <span className="text-xl font-bold text-foreground">Omni-Legacy Limited</span>
             </Link>
           </div>
 
