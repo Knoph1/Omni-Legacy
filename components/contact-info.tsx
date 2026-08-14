@@ -120,7 +120,7 @@ export function ContactInfo() {
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
                     <span>Monday - Friday:</span>
-                    <span>8:00 AM - 5:00 PM EAT</span>
+                    <span>9:00 AM - 4:00 PM EAT</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Saturday:</span>
