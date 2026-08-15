@@ -1,21 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { NewsletterSignup } from "@/components/newsletter-signup"
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react"
-
-// Official X (formerly Twitter) SVG Icon component
-function XIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={props.className}
-      {...props}
-    >
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  )
-}
+import { Github, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -28,23 +14,23 @@ export function Footer() {
               Omni-Legacy Limited
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              A <strong>Kenyan Tech Company</strong> delivering cutting-edge software, IT services and digital transformation
+              A <strong>Kenyan IT company</strong> delivering cutting-edge software, IT services and digital transformation
               solutions across Kenya and East Africa.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://github.com/Omni-Legacy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/Knoph1/Omni-Legacy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <a href="https://x.com/knoph_ayieko" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
-                  <XIcon className="h-5 w-5" />
+                <a href="https://twitter.com/omni-legacy" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <Twitter className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://www.linkedin.com/in/knoph-ayieko"
+                  href="https://linkedin.com/omni-legacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
